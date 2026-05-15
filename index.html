@@ -1,0 +1,3224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<template id="__bundler_thumbnail" data-bg-color="#0a0a0a"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect width="400" height="300" fill="#0a0a0a"/><rect x="40" y="40" width="320" height="220" fill="none" stroke="#E50914" stroke-width="2"/><text x="200" y="148" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#fff" letter-spacing="-1">PROJECT CASTING</text><text x="200" y="180" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="20" font-style="italic" font-weight="300" fill="#E50914">× UNFAZED</text><text x="200" y="220" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing="4" fill="#888">SPONSORSHIP · FY26</text></svg></template>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Unfazed Exhibit × Project Casting — Sponsorship Proposal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  /* ---------- TOKENS ---------- */
+  :root{
+    --bg:#0A0A0A;
+    --bg-2:#111111;
+    --ink:#F5F1EA;
+    --ink-dim:#8A8680;
+    --ink-faint:#3A3834;
+    --rule:#1F1E1B;
+    --accent: #E50914;                    /* project casting red */
+    --accent-2: #B30710;                  /* deeper red */
+    --danger: oklch(0.72 0.2 25);
+    --display:"Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+    --body:"Inter", ui-sans-serif, system-ui, sans-serif;
+    --mono:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    --maxw: 1440px;
+    --pad: clamp(20px, 4vw, 64px);
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  html{scroll-behavior:smooth}
+  body{overflow-x:hidden}
+  ::selection{background:var(--accent);color:#0A0A0A}
+  
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+
+  /* ---------- CHROME: top nav ---------- */
+  .nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px var(--pad);
+    font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--ink);
+    background:rgba(10,10,10,.72);
+    backdrop-filter:blur(14px) saturate(1.1);
+    -webkit-backdrop-filter:blur(14px) saturate(1.1);
+    border-bottom:1px solid transparent;
+    transition:background .25s ease, border-color .25s ease;
+  }
+  .nav.scrolled{
+    background:rgba(10,10,10,.88);
+    border-bottom-color:var(--rule);
+  }
+  .nav .logo{display:flex;align-items:center;gap:10px;font-weight:500}
+  .nav .logo img{height:72px;width:auto;display:block;margin-top:-22px;margin-bottom:-22px}
+  .nav .logo .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(255,255,255,.08)}
+  .nav .links{display:flex;gap:16px}
+  .nav .links a{opacity:.7;transition:opacity .2s}
+  .nav .links a:hover{opacity:1}
+  .nav .cta{
+    border:1px solid var(--ink);padding:8px 14px;border-radius:999px;
+    transition:background .2s,color .2s;
+  }
+  .nav .cta:hover{background:var(--ink);color:var(--bg)}
+  @media (max-width:720px){ .nav .links{display:none} }
+
+  /* ---------- SECTION META ---------- */
+  .section{
+    position:relative;
+    padding: clamp(56px, 7vw, 100px) var(--pad);
+    border-top:1px solid var(--rule);
+  }
+  .section:first-of-type{border-top:0}
+  .meta{
+    display:flex;justify-content:space-between;align-items:baseline;
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-dim);
+    margin-bottom: clamp(20px,3vw,36px);
+  }
+  .meta .idx{color:var(--ink)}
+  .meta .idx::before{content:"§ ";color:var(--accent)}
+
+  .kicker{
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent);
+  }
+
+  h1,h2,h3,h4{font-family:var(--display);font-weight:500;letter-spacing:-0.02em;margin:0}
+  .h-display{
+    font-size: clamp(56px, 11vw, 180px);
+    line-height:.92;letter-spacing:-.04em;font-weight:600;
+  }
+  .h-xl{ font-size: clamp(40px, 6vw, 88px); line-height:.98; letter-spacing:-.03em; }
+  .h-l { font-size: clamp(28px, 3.2vw, 44px); line-height:1.05; }
+  .h-m { font-size: clamp(20px, 2vw, 26px); line-height:1.1; font-weight:500;}
+  .p-lg{font-size:clamp(16px,1.3vw,19px);line-height:1.5;color:var(--ink);max-width:62ch}
+  .p   {font-size:15px;line-height:1.55;color:var(--ink-dim);max-width:62ch}
+
+  .rule{height:1px;background:var(--rule);width:100%}
+  .rule-v{width:1px;background:var(--rule);height:100%}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.6,.2,1), transform .9s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}
+  .reveal.d2{transition-delay:.16s}
+  .reveal.d3{transition-delay:.24s}
+  .reveal.d4{transition-delay:.32s}
+
+  /* =========================================================
+     HERO — PC × UNFAZED Sponsorship Cover
+  ========================================================= */
+  .hero{
+    min-height:100svh;
+    padding: clamp(90px, 12vw, 140px) var(--pad) 60px;
+    position:relative;overflow:hidden;
+    display:flex;flex-direction:column;
+    border-top:0;
+    background:#050505;
+    color:var(--ink);
+  }
+  /* Faint photo collage behind */
+  .collage{
+    position:absolute;inset:0;
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    gap:2px;
+    pointer-events:none;
+    opacity:.18;
+    filter:grayscale(1) contrast(1.1) brightness(.45);
+  }
+  .collage .tile{
+    background-size:cover;background-position:center;
+    will-change:transform;
+    animation: drift 22s ease-in-out infinite alternate;
+  }
+  .collage .tile:nth-child(odd){animation-duration:26s}
+  .collage .tile:nth-child(3n){animation-duration:30s;animation-direction:alternate-reverse}
+  .collage .tile:nth-child(5n){animation-duration:34s}
+  @keyframes drift{
+    from{transform:scale(1.04) translate(0,0)}
+    to  {transform:scale(1.08) translate(-1.2%, -0.8%)}
+  }
+  /* Big red wash + vignette */
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+    background:
+      linear-gradient(180deg, rgba(229,9,20,0) 0%, rgba(229,9,20,.05) 60%, rgba(229,9,20,.18) 100%),
+      radial-gradient(80% 60% at 12% 0%, rgba(229,9,20,.22), transparent 55%),
+      radial-gradient(90% 90% at 50% 50%, transparent 50%, rgba(5,5,5,.92) 100%),
+      radial-gradient(60% 50% at var(--mx,80%) var(--my,80%), rgba(229,9,20,.16), transparent 60%);
+    transition:background .3s;
+  }
+  /* Halftone dots */
+  .hero::after{
+    content:"";position:absolute;inset:0;pointer-events:none;z-index:1;
+    background-image:
+      radial-gradient(rgba(255,255,255,.04) 1px, transparent 1px);
+    background-size: 3px 3px;
+    mix-blend-mode:overlay;
+    opacity:.5;
+  }
+
+  /* TOP STRIP — top.left doc id, top.right confidential stamp */
+  .hero-top{
+    position:relative;z-index:3;
+    display:flex;justify-content:space-between;align-items:flex-start;gap:24px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ink-dim);
+    margin-bottom:auto;padding-bottom:48px;
+  }
+  .hero-top .doc{display:flex;flex-direction:column;gap:6px}
+  .hero-top .doc b{color:var(--ink);font-weight:500;letter-spacing:.22em}
+  .hero-top .stamp-conf{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1.5px solid var(--accent);color:var(--accent);
+    padding:6px 12px;border-radius:4px;
+    transform:rotate(2deg);font-weight:600;letter-spacing:.2em;
+  }
+  .hero-top .stamp-conf::before{
+    content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);
+  }
+
+  /* CO-BRAND LOCKUP — center */
+  .hero-cobrand{
+    position:relative;z-index:3;
+    display:flex;flex-direction:column;align-items:flex-start;justify-content:center;
+    flex:1;
+    animation: logo-in 1.4s cubic-bezier(.2,.6,.2,1) both;
+  }
+  @keyframes logo-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+  .hc-eyebrow{
+    display:inline-flex;align-items:center;gap:14px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:36px;
+  }
+  .hc-eyebrow::before{
+    content:"";width:32px;height:1px;background:var(--accent);
+  }
+  .hc-eyebrow b{color:var(--ink);font-weight:500;letter-spacing:.18em}
+
+  /* The lockup itself */
+  .hc-lockup{
+    display:flex;align-items:center;gap:clamp(20px, 3.5vw, 56px);
+    margin-bottom:30px;flex-wrap:wrap;
+  }
+  .hc-pc{
+    display:flex;flex-direction:column;line-height:.85;
+  }
+  .hc-pc .pc-mark{
+    font-family:var(--display);font-weight:700;letter-spacing:-.045em;
+    font-size:clamp(64px, 10vw, 168px);line-height:.85;color:var(--ink);
+  }
+  .hc-pc .pc-mark span{color:var(--accent)}
+  .hc-pc .pc-sub{
+    font-family:var(--mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--ink-dim);margin-top:14px;
+  }
+  .hc-x{
+    font-family:var(--display);font-weight:300;font-style:italic;
+    font-size:clamp(48px, 7vw, 96px);color:var(--accent);line-height:.85;
+    align-self:center;
+    opacity:.92;
+  }
+  .hc-uf{
+    display:flex;flex-direction:column;line-height:.85;
+  }
+  .hc-uf img{
+    width:clamp(180px, 22vw, 360px);height:auto;display:block;
+    filter:drop-shadow(0 8px 24px rgba(0,0,0,.8));
+  }
+  .hc-uf .uf-sub{
+    font-family:var(--mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--ink-dim);margin-top:14px;
+  }
+
+  /* Headline below lockup */
+  .hc-title{
+    font-family:var(--display);font-weight:500;letter-spacing:-.035em;
+    font-size:clamp(28px, 3.6vw, 52px);line-height:1.05;
+    color:var(--ink);max-width:24ch;margin:0 0 18px;
+  }
+  .hc-title em{font-style:italic;font-weight:300;color:var(--accent)}
+
+  .hc-deck{
+    font-size:16px;line-height:1.55;color:var(--ink-dim);max-width:60ch;margin:0 0 30px;
+  }
+
+  /* Meta strip */
+  .hc-meta{
+    display:flex;gap:32px;flex-wrap:wrap;
+    margin-bottom:36px;
+  }
+  .hc-meta .item{
+    display:flex;flex-direction:column;gap:4px;
+    border-left:2px solid var(--accent);padding-left:14px;
+    min-width:120px;
+  }
+  .hc-meta .item .k{
+    font-family:var(--mono);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .hc-meta .item .v{
+    font-family:var(--display);font-size:18px;font-weight:500;letter-spacing:-.01em;color:var(--ink);
+  }
+
+  /* CTA row */
+  .hc-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .hc-cta{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 24px;border-radius:2px;
+    background:var(--accent);color:#fff;
+    font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+    transition:background .25s, transform .25s;
+  }
+  .hc-cta:hover{background:#fff;color:#0a0a0a;transform:translateY(-2px)}
+  .hc-cta .arr{transition:transform .25s}
+  .hc-cta:hover .arr{transform:translateX(4px)}
+  .hc-cta-ghost{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 24px;border-radius:2px;
+    border:1px solid var(--ink-faint);color:var(--ink);
+    font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;
+    transition:border-color .25s, color .25s;
+  }
+  .hc-cta-ghost:hover{border-color:var(--ink);color:var(--ink)}
+
+  /* BOTTOM STRIP */
+  .hero-foot{
+    position:relative;z-index:3;
+    display:flex;justify-content:space-between;align-items:flex-end;gap:24px;
+    margin-top:48px;padding-top:24px;
+    border-top:1px solid rgba(255,255,255,.08);
+    font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-dim);
+  }
+  .hero-foot .l{display:flex;gap:24px;flex-wrap:wrap}
+  .hero-foot .l span{display:inline-flex;align-items:center;gap:8px}
+  .hero-foot .l span b{color:var(--ink);font-weight:500}
+  .hero-foot .r{display:inline-flex;align-items:center;gap:10px;color:var(--ink)}
+  .hero-foot .r .arr{display:inline-block;width:1px;height:18px;background:var(--ink);position:relative}
+  .hero-foot .r .arr::after{content:"";position:absolute;left:-3px;bottom:0;width:7px;height:7px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);transform:rotate(45deg)}
+
+  /* Mobile */
+  @media (max-width:720px){
+    .collage{grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(5,1fr)}
+    .collage .tile:nth-child(n+16){display:none}
+    .hc-lockup{gap:18px}
+    .hero-foot .l{gap:14px}
+  }
+
+
+  /* Marquee ticker */
+  .ticker{
+    overflow:hidden;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    background:var(--bg);
+    padding:14px 0;
+  }
+  .ticker-track{
+    display:flex;gap:48px;white-space:nowrap;
+    animation: tick 40s linear infinite;
+    font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)
+  }
+  @media (max-width:640px){
+    .ticker-track{font-size:10px;letter-spacing:.1em;gap:28px}
+  }
+  .ticker-track span{display:inline-flex;align-items:center;gap:14px}
+  .ticker-track span::after{content:"●";color:var(--accent);font-size:8px;margin-left:34px}
+  @keyframes tick{
+    from{transform:translateX(0)}
+    to{transform:translateX(-50%)}
+  }
+
+  /* =========================================================
+     NUMBERS
+  ========================================================= */
+  .nums{
+    display:grid;grid-template-columns:repeat(12, 1fr);gap:0;
+    border:1px solid var(--rule);border-radius:4px;overflow:hidden;
+  }
+  .nums .cell{
+    grid-column:span 3;
+    padding:32px 26px;
+    border-right:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+    position:relative;display:flex;flex-direction:column;gap:14px;
+    transition:background .3s;
+  }
+  .nums .cell:hover{background:#0f0f0f}
+  .nums .cell:nth-child(4n){border-right:0}
+  .nums .cell:nth-last-child(-n+4){border-bottom:0}
+  .nums .cell .lbl{
+    font-family:var(--display);font-weight:500;letter-spacing:-.025em;
+    font-size:clamp(20px,1.7vw,26px);line-height:1.1;
+    color:var(--accent);
+  }
+  .nums .cell .val{font-family:var(--display);font-size:clamp(40px,4.4vw,60px);font-weight:500;letter-spacing:-.03em;line-height:1}
+  .nums .cell .val .unit{font-size:.4em;color:var(--ink-dim);letter-spacing:-.01em;margin-left:4px;vertical-align: super;font-weight:400}  .nums .cell .desc{font-size:13px;color:var(--ink-dim);line-height:1.45;margin-top:auto;padding-top:6px}
+  .nums .cell .idx{position:absolute;top:14px;right:18px;font-family:var(--mono);font-size:10px;color:var(--ink-faint)}
+  @media (max-width:980px){ .nums .cell{grid-column:span 6} .nums .cell:nth-child(4n){border-right:1px solid var(--rule)} .nums .cell:nth-child(2n){border-right:0}}
+  @media (max-width:600px){ .nums .cell{grid-column:span 12;border-right:0 !important;border-bottom:1px solid var(--rule) !important}}
+
+  /* =========================================================
+     FLYERS MARQUEE
+  ========================================================= */
+  .flyers{
+    position:relative;padding: clamp(40px,5vw,72px) 0;
+    border-top:1px solid var(--rule);
+    overflow:hidden;
+    background:
+      radial-gradient(80% 60% at 50% 0%, rgba(229,9,20,.05), transparent 60%),
+      #080808;
+  }
+  .flyers-head{
+    display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+    padding:0 var(--pad);margin-bottom:28px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .flyers-row{overflow:hidden;mask-image:linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);-webkit-mask-image:linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%)}
+  .flyers-track{
+    display:flex;gap:16px;width:max-content;padding:6px var(--pad);
+    animation: fly 110s linear infinite;
+    will-change:transform;
+  }
+  .flyers:hover .flyers-track{animation-play-state:paused}
+  @keyframes fly{
+    from{transform:translateX(0)}
+    to  {transform:translateX(-50%)}
+  }
+  .flyer{
+    position:relative;flex:0 0 auto;
+    width: clamp(180px, 22vw, 300px);
+    aspect-ratio: 4/5;
+    margin:0;border-radius:4px;overflow:hidden;
+    background:#101010;
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+    transition:transform .4s cubic-bezier(.2,.6,.2,1);
+  }
+  .flyer:hover{transform:translateY(-4px) scale(1.02);z-index:2}
+  .flyer img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05)}
+  .flyer figcaption{
+    position:absolute;left:10px;bottom:10px;
+    font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);
+    background:rgba(0,0,0,.6);backdrop-filter:blur(6px);
+    padding:5px 8px;border-radius:2px;
+    opacity:0;transform:translateY(4px);transition:opacity .3s, transform .3s;
+  }
+  .flyer:hover figcaption{opacity:1;transform:none}
+
+  /* =========================================================
+     HOSTS
+  ========================================================= */
+  .hosts-grid{
+    display:grid;grid-template-columns:repeat(5,1fr);gap:16px;
+    align-items:start;
+  }
+  @media (max-width:1100px){ .hosts-grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:520px){ .hosts-grid{grid-template-columns:1fr} }
+  .host-cell{display:flex;flex-direction:column;gap:10px}
+  .host-drop{
+    position:relative;width:100%;aspect-ratio:9/16;
+    overflow:hidden;border-radius:3px;background:#0c0c0c;
+    border:1px solid var(--rule);
+    cursor:pointer;
+    transition:border-color .35s, transform .35s;
+  }
+  .host-drop:hover{border-color:rgba(255,255,255,.18);transform:translateY(-2px)}
+  .host-drop video{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;display:block;
+    filter:grayscale(.7) contrast(1.04) brightness(.88);
+    transition:filter .5s;
+  }
+  .host-drop:hover video{filter:grayscale(0) contrast(1) brightness(.95)}
+  .host-drop .drop-tag{
+    position:absolute;top:10px;left:10px;z-index:2;
+    font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);
+    background:rgba(0,0,0,.5);backdrop-filter:blur(6px);padding:5px 8px;border-radius:2px;
+  }
+  .host-drop::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg, rgba(0,0,0,.35) 0%, transparent 25%, transparent 75%, rgba(0,0,0,.5) 100%);
+  }
+  .host{
+    position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:3px;
+    background:#121212;
+    isolation:isolate;cursor:pointer;
+    display:block;color:inherit;text-decoration:none;
+    transition:transform .4s cubic-bezier(.2,.6,.2,1), box-shadow .4s;
+  }
+  a.host:hover{transform:translateY(-3px);box-shadow:0 20px 50px rgba(0,0,0,.5)}
+  .host .recap-cta{
+    position:absolute;top:12px;right:12px;z-index:3;
+    display:inline-flex;align-items:center;gap:6px;
+    background:rgba(0,0,0,.55);backdrop-filter:blur(6px);
+    padding:6px 9px;border-radius:2px;
+    font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink);opacity:0;transform:translateY(-4px);
+    transition:opacity .3s, transform .3s;
+    pointer-events:none;
+  }
+  a.host:hover .recap-cta{opacity:1;transform:none}
+  a.host .top{display:none}
+  .host .ph{
+    position:absolute;inset:0;
+    background:
+      linear-gradient(135deg, transparent 40%, rgba(255,255,255,.04) 40%, rgba(255,255,255,.04) 42%, transparent 42%) 0 0 / 10px 10px,
+      linear-gradient(160deg, #1b1814, #0a0a0a);
+    transition:transform .6s cubic-bezier(.2,.6,.2,1);
+  }
+  .host:hover .ph{transform:scale(1.04)}
+  .host.has-img .ph{filter:grayscale(.85) contrast(1.05) brightness(.82);transition:transform .6s cubic-bezier(.2,.6,.2,1), filter .6s}
+  .host.has-img:hover .ph{filter:grayscale(0) contrast(1) brightness(.95)}
+  .host.has-img::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg, transparent 40%, rgba(10,10,10,.2) 60%, rgba(10,10,10,.85) 100%);
+  }
+  .host .initials{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-weight:600;font-size:clamp(48px,6vw,88px);letter-spacing:-.04em;
+    color:rgba(245,241,234,.08);
+    pointer-events:none;
+  }
+  .host .ph-tag{
+    position:absolute;top:12px;left:12px;
+    font-family:var(--mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);
+    background:rgba(0,0,0,.5);backdrop-filter:blur(6px);padding:5px 8px;border-radius:2px;
+  }
+  .host .top{
+    position:absolute;top:12px;right:12px;
+    font-family:var(--mono);font-size:10px;color:var(--accent);
+  }
+  .host .foot{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:16px;
+    background:linear-gradient(to top, rgba(0,0,0,.88), transparent);
+    display:flex;flex-direction:column;gap:6px;
+  }
+  .host .foot .name{font-family:var(--display);font-size:22px;font-weight:500;letter-spacing:-.02em}
+  .host .foot .role{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim)}
+  .host .foot .reach{
+    display:flex;gap:10px;margin-top:10px;flex-wrap:wrap;
+    font-family:var(--mono);font-size:10px;letter-spacing:.05em;color:var(--ink)
+  }
+  .host .foot .reach span{border:1px solid var(--ink-faint);padding:3px 6px;border-radius:2px}
+  .host .foot .reach span b{color:var(--accent);font-weight:500}
+
+  #hosts{padding-bottom: clamp(20px, 2.5vw, 36px)}
+
+  /* =========================================================
+     EXPERIENCE — mixed media editorial
+  ========================================================= */
+  .exp-stage{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(0, auto);
+    gap:14px;
+  }
+  /* Card baseline */
+  .ex{
+    position:relative;overflow:hidden;border-radius:3px;background:#0c0c0c;cursor:pointer;
+    border:1px solid rgba(255,255,255,.04);
+    isolation:isolate;
+  }
+  .ex .media{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;display:block;
+    transition:transform .9s cubic-bezier(.2,.6,.2,1), filter .6s;
+    filter:saturate(.92) contrast(1.04);
+  }
+  .ex:hover .media{transform:scale(1.04);filter:saturate(1.05) contrast(1.06)}
+  .ex::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,0) 55%, rgba(0,0,0,.78) 100%);
+  }
+  .ex .tag{
+    position:absolute;top:12px;left:12px;z-index:2;
+    font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);
+    background:rgba(0,0,0,.55);backdrop-filter:blur(6px);padding:5px 8px;border-radius:2px;
+  }
+  .ex .lbl{
+    position:absolute;left:14px;right:14px;bottom:12px;z-index:2;
+    display:flex;justify-content:space-between;align-items:flex-end;gap:12px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .ex .lbl b{color:var(--ink);font-weight:500;letter-spacing:.04em}
+  .ex .play{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;
+    width:62px;height:62px;border-radius:50%;
+    border:1px solid rgba(245,241,234,.55);
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(10,10,10,.35);backdrop-filter:blur(10px);
+    transition:transform .3s, background .3s, border-color .3s;
+  }
+  .ex:hover .play{transform:translate(-50%,-50%) scale(1.1);background:var(--accent);border-color:var(--accent)}
+  .ex:hover .play svg{color:#0a0a0a}
+  .ex .play svg{width:18px;height:18px;color:var(--ink);margin-left:2px}
+  .ex .live{
+    position:absolute;top:12px;right:12px;z-index:2;
+    font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+    color:#ffe7d6;display:flex;align-items:center;gap:6px;
+  }
+  .ex .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:pulse 2s infinite}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(229,9,20,.6)}
+    70%{box-shadow:0 0 0 10px rgba(229,9,20,0)}
+    100%{box-shadow:0 0 0 0 rgba(229,9,20,0)}
+  }
+
+  /* Reels — portrait videos, autoplay muted */
+  .ex.reel{aspect-ratio: 9/16}
+  .ex.reel.lead{grid-column:span 1;grid-row:span 2}
+  /* Photos & landscape */
+  .ex.photo{aspect-ratio: 4/3}
+  .ex.photo-tall{aspect-ratio: 3/4}
+  .ex.photo-wide{aspect-ratio: 16/9; grid-column: span 2}
+  .ex.flyer{aspect-ratio: 4/5}
+
+  /* Featured strip — same scale as reel-row tiles below */
+  .exp-strip{
+    display:grid;grid-template-columns: repeat(3, 1fr);gap:14px;margin-bottom:14px;align-items:start;
+  }
+  .exp-strip .reel{aspect-ratio: 9/16}
+  .exp-strip .feat{
+    position:relative;overflow:hidden;border-radius:3px;background:#0c0c0c;
+    border:1px solid rgba(255,255,255,.04);
+    aspect-ratio: 9/16;
+    cursor:pointer;
+  }
+  .exp-strip .feat .media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.95)}
+  .exp-strip .feat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,0) 30%, rgba(0,0,0,.85))}
+  .exp-strip .feat .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;border:1px solid rgba(245,241,234,.6);display:flex;align-items:center;justify-content:center;background:rgba(10,10,10,.35);backdrop-filter:blur(10px);transition:transform .3s, background .3s, border-color .3s;z-index:2}
+  .exp-strip .feat:hover .play{transform:translate(-50%,-50%) scale(1.1);background:var(--accent);border-color:var(--accent)}
+  .exp-strip .feat:hover .play svg{color:#0a0a0a}
+  .exp-strip .feat .play svg{width:22px;height:22px;color:var(--ink);margin-left:2px}
+
+  /* Marquee row of reels */
+  .reel-row{
+    display:grid;grid-template-columns: repeat(3, 1fr);gap:14px;margin-bottom:14px;
+  }
+  .reel-row .ex{aspect-ratio: 9/16}
+
+  /* Mosaic row - mix of crowd photos */
+  .mosaic-row{
+    display:grid;grid-template-columns: repeat(4, 1fr);gap:14px;
+  }
+  .mosaic-row .ex{aspect-ratio: 1/1}
+  .mosaic-row .ex.wide{grid-column: span 2; aspect-ratio: 2/1}
+  .mosaic-row .ex.tall{grid-row: span 2; aspect-ratio: auto}
+
+  /* Go Viral With Unfazed — analytics screenshots, one clean line */
+  .viral-head{
+    display:flex;justify-content:center;align-items:center;
+    margin-top:8px;margin-bottom:24px;
+    padding-top:32px;border-top:1px solid var(--rule);
+    text-align:center;
+  }
+  .viral-head .kicker{
+    font-family:var(--display);font-size:clamp(44px,6vw,88px);font-weight:600;
+    letter-spacing:-.035em;text-transform:none;
+    line-height:1;
+    background:linear-gradient(180deg, #fff 30%, var(--accent) 130%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+  }
+  .viral-row{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:14px;
+  }
+  .viral{
+    position:relative;margin:0;
+    aspect-ratio:9/16;
+    overflow:hidden;border-radius:3px;background:#0c0c0c;
+    border:1px solid var(--rule);
+    transition:border-color .35s, transform .35s;
+  }
+  .viral:hover{border-color:rgba(255,255,255,.22);transform:translateY(-3px) scale(1.03);z-index:2}
+  .viral img{
+    width:100%;height:100%;object-fit:contain;display:block;
+    background:#0c0c0c;
+    transition:transform .5s;
+  }
+  .viral figcaption{
+    position:absolute;left:10px;bottom:10px;right:10px;
+    font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);
+    background:rgba(0,0,0,.55);backdrop-filter:blur(6px);padding:5px 8px;border-radius:2px;
+    opacity:0;transform:translateY(4px);transition:opacity .3s, transform .3s;
+  }
+  .viral:hover figcaption{opacity:1;transform:none}
+  @media (max-width:1100px){
+    .viral-row{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (max-width:520px){
+    .viral-row{grid-template-columns:repeat(2,1fr);gap:10px}
+  }
+
+  /* Press mosaic — masonry columns, every image shown in full at native ratio */
+  .press-mosaic{
+    column-count:5;column-gap:10px;
+    margin-top:32px;
+  }
+  .press-mosaic .pm{
+    position:relative;margin:0 0 10px;
+    overflow:hidden;border-radius:3px;background:#0c0c0c;
+    border:1px solid var(--rule);
+    break-inside:avoid;
+    transition:border-color .35s, transform .35s;
+  }
+  .press-mosaic .pm:hover{border-color:rgba(255,255,255,.22);transform:translateY(-3px) scale(1.02);z-index:2}
+  .press-mosaic .pm img{
+    width:100%;height:auto;display:block;
+    transition:transform .5s;
+  }
+  .press-mosaic .pm:hover img{transform:scale(1.03)}
+  @media (max-width:1100px){
+    .press-mosaic{column-count:3}
+  }
+  @media (max-width:520px){
+    .press-mosaic{column-count:2;column-gap:10px}
+    .press-mosaic .pm{margin-bottom:10px}
+  }
+
+  /* Lightbox */
+  .lb{
+    position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+    background:rgba(5,5,5,.92);backdrop-filter:blur(8px);padding:32px;
+  }
+  .lb.open{display:flex}
+  .lb .lb-inner{
+    position:relative;max-width:min(96vw, 480px);width:100%;max-height:90vh;
+    aspect-ratio: 9/16;
+    border-radius:4px;overflow:hidden;background:#000;
+    box-shadow:0 30px 80px rgba(0,0,0,.6);
+  }
+  .lb .lb-inner.landscape{aspect-ratio: 16/9;max-width:min(96vw, 1200px)}
+  .lb video, .lb img{width:100%;height:100%;object-fit:contain;display:block}
+  .lb .lb-close{
+    position:absolute;top:20px;right:20px;z-index:2;
+    width:42px;height:42px;border-radius:50%;border:1px solid rgba(245,241,234,.4);
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(10,10,10,.6);color:var(--ink);cursor:pointer;
+    font-family:var(--mono);font-size:14px;
+    transition:background .2s, border-color .2s;
+  }
+  .lb .lb-close:hover{background:var(--accent);border-color:var(--accent);color:#0a0a0a}
+
+  @media (max-width:900px){
+    .exp-strip, .reel-row{grid-template-columns: repeat(2, 1fr);gap:10px}
+    .exp-strip .ex:nth-child(3), .reel-row .ex:nth-child(3){display:none}
+    .mosaic-row{grid-template-columns: repeat(2, 1fr);gap:10px}
+    .mosaic-row .ex.wide{grid-column: span 2; aspect-ratio: 2/1}
+    .mosaic-row .ex.tall{grid-row: auto; aspect-ratio: 1/1}
+  }
+
+  /* =========================================================
+     AUDIENCE
+  ========================================================= */
+  .aud-layout{
+    display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start;
+  }
+  @media (max-width:960px){ .aud-layout{grid-template-columns:1fr} }
+  .bar-group{display:flex;flex-direction:column;gap:22px;margin-top:8px}
+  .bar-row .bar-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+  .bar-row .bar-head .l{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+  .bar-row .bar-head .v{font-family:var(--display);font-size:20px;font-weight:500;color:var(--accent);letter-spacing:-.02em}
+  .bar-track{height:6px;background:var(--rule);border-radius:99px;overflow:hidden;position:relative}
+  .bar-fill{
+    position:absolute;inset:0 auto 0 0;height:100%;width:0;
+    background:linear-gradient(90deg, var(--accent), #B30710);
+    border-radius:99px;
+    transition:width 1.4s cubic-bezier(.2,.6,.2,1);
+  }
+  .bar-row.in .bar-fill{width:var(--w,50%)}
+
+  .split{
+    display:flex;align-items:stretch;border:1px solid var(--rule);border-radius:3px;overflow:hidden;height:88px;margin-bottom:22px;
+  }
+  .split .seg{display:flex;flex-direction:column;justify-content:center;padding:0 22px;position:relative}
+  .split .seg.male{flex:72;background:linear-gradient(135deg, #E50914, #B30710);color:#fff}
+  .split .seg.female{flex:28;background:#161412;color:var(--ink)}
+  .split .seg .n{font-family:var(--display);font-size:26px;font-weight:500;letter-spacing:-.02em}
+  .split .seg .l{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+
+  .psych{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px;
+  }
+  .psych .chip{
+    border:1px solid var(--rule);padding:14px;border-radius:3px;
+    display:flex;flex-direction:column;gap:6px;
+    transition:border-color .2s, background .2s;
+  }
+  .psych .chip:hover{border-color:var(--ink-faint);background:#0f0f0f}
+  .psych .chip .k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim)}
+  .psych .chip .v{font-family:var(--display);font-size:16px;letter-spacing:-.01em}
+
+  .aud-right{
+    padding:32px;border:1px solid var(--rule);border-radius:3px;position:sticky;top:80px;
+    background:linear-gradient(160deg, #101010, #0a0a0a);
+  }
+  .aud-right h3{font-size:clamp(22px,2.4vw,30px);letter-spacing:-.02em;margin-bottom:18px;line-height:1.1}
+  .donut{
+    display:flex;justify-content:center;align-items:center;gap:28px;flex-wrap:wrap;margin:18px 0 28px;
+  }
+  .donut svg{width:180px;height:180px}
+  .donut .legend{display:flex;flex-direction:column;gap:10px;font-family:var(--mono);font-size:11px;color:var(--ink-dim)}
+  .donut .legend .row{display:flex;align-items:center;gap:10px}
+  .donut .legend .sw{width:10px;height:10px;border-radius:2px}
+  .donut .legend b{color:var(--ink);font-weight:500}
+
+  /* =========================================================
+     TIERS
+  ========================================================= */
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:920px){ .tiers{grid-template-columns:1fr} }
+  .tier{
+    border:1px solid var(--rule);border-radius:3px;padding:28px;
+    display:flex;flex-direction:column;gap:18px;
+    position:relative;overflow:hidden;
+    transition:border-color .3s, transform .3s;
+    background:#0c0c0c;
+  }
+  .tier:hover{border-color:var(--ink-faint);transform:translateY(-4px)}
+  .tier.feat{border-color:var(--accent);background:linear-gradient(180deg, rgba(229,9,20,.08), transparent 60%)}
+  .tier.feat::before{
+    content:"RECOMMENDED";position:absolute;top:0;right:0;
+    font-family:var(--mono);font-size:9px;letter-spacing:.18em;
+    background:var(--accent);color:#0a0a0a;padding:5px 10px;border-radius:0 0 0 4px;
+  }
+  .tier .t-meta{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim)}
+  .tier .t-name{font-family:var(--display);font-size:30px;font-weight:500;letter-spacing:-.02em;margin-top:4px}
+  .tier .t-price{display:flex;align-items:baseline;gap:6px;font-family:var(--display)}
+  .tier .t-price .amt{font-size:44px;font-weight:500;letter-spacing:-.03em;line-height:1}
+  .tier .t-price .cur{font-size:18px;color:var(--ink-dim)}
+  .tier .t-price .per{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim);margin-left:auto}
+  .tier .t-desc{font-size:14px;color:var(--ink-dim);line-height:1.5}
+  .tier .t-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--rule);padding-top:18px}
+  .tier .t-list li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45}
+  .tier .t-list li::before{
+    content:"";display:block;flex:0 0 auto;margin-top:7px;
+    width:6px;height:6px;background:var(--accent);transform:rotate(45deg);
+  }
+  .tier .t-cta{
+    margin-top:auto;display:flex;align-items:center;justify-content:space-between;
+    padding:14px 0 0;border-top:1px solid var(--rule);
+    font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);
+    transition:color .2s;
+  }
+  .tier .t-cta:hover{color:var(--accent)}
+  .tier .t-cta .arr{transition:transform .3s}
+  .tier .t-cta:hover .arr{transform:translateX(6px)}
+
+  /* =========================================================
+     WHY PC × UNFAZED — match thesis
+  ========================================================= */
+  .why-pc{
+    display:grid;grid-template-columns: 1.2fr 1fr;gap:48px;align-items:start;
+  }
+  @media (max-width:960px){ .why-pc{grid-template-columns:1fr;gap:32px} }
+  .why-pc .thesis h2{
+    font-family:var(--display);font-weight:500;letter-spacing:-.035em;line-height:.96;
+    font-size:clamp(40px,5.5vw,76px);margin:0 0 24px;max-width:14ch;
+  }
+  .why-pc .thesis h2 em{font-style:italic;font-weight:300;color:var(--accent)}
+  .why-pc .thesis p{font-size:16px;line-height:1.55;color:var(--ink-dim);max-width:50ch;margin:0 0 14px}
+
+  .match-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:0;
+    border:1px solid var(--rule);border-radius:3px;overflow:hidden;
+    background:#0c0c0c;
+  }
+  .match-cell{
+    padding:24px 22px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    display:flex;flex-direction:column;gap:8px;min-height:148px;
+  }
+  .match-cell:nth-child(2n){border-right:0}
+  .match-cell:nth-last-child(-n+2){border-bottom:0}
+  .match-cell .k{
+    font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent);
+  }
+  .match-cell .v{
+    font-family:var(--display);font-size:clamp(26px,2.6vw,36px);font-weight:500;
+    letter-spacing:-.025em;line-height:1;color:var(--ink);
+  }
+  .match-cell .d{
+    font-size:12.5px;line-height:1.5;color:var(--ink-dim);margin-top:auto;
+  }
+
+  .compare{
+    margin-top:48px;border:1px solid var(--rule);border-radius:3px;overflow:hidden;
+  }
+  .compare-head{
+    display:grid;grid-template-columns:1fr 1fr;
+    font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-dim);border-bottom:1px solid var(--rule);
+  }
+  .compare-head > div{padding:14px 22px;border-right:1px solid var(--rule)}
+  .compare-head > div:last-child{border-right:0;color:var(--accent)}
+  .compare-row{
+    display:grid;grid-template-columns:1fr 1fr;
+    border-bottom:1px solid var(--rule);
+  }
+  .compare-row:last-child{border-bottom:0}
+  .compare-row > div{
+    padding:18px 22px;border-right:1px solid var(--rule);
+    font-size:14px;line-height:1.5;color:var(--ink);
+  }
+  .compare-row > div:first-child{color:var(--ink-dim)}
+  .compare-row > div:last-child{border-right:0}
+  @media (max-width:680px){
+    .match-grid{grid-template-columns:1fr}
+    .match-cell{border-right:0;border-bottom:1px solid var(--rule)}
+    .match-cell:last-child{border-bottom:0}
+    .compare-head, .compare-row{grid-template-columns:1fr}
+    .compare-head > div, .compare-row > div{border-right:0;border-bottom:1px solid var(--rule)}
+    .compare-row > div:last-child, .compare-head > div:last-child{border-bottom:0}
+  }
+
+  /* =========================================================
+     PARTNERSHIP v2 — EDD-inspired card layout
+  ========================================================= */
+  .pship-head{
+    display:grid;grid-template-columns: 1.4fr 1fr;gap:48px;align-items:end;margin-bottom:40px;
+  }
+  @media (max-width:900px){ .pship-head{grid-template-columns:1fr;gap:24px} }
+  .pship-head h2{
+    font-family:var(--display);font-weight:500;letter-spacing:-.035em;line-height:.95;
+    font-size:clamp(40px, 6vw, 84px);margin:0;max-width:14ch;
+  }
+  .pship-head .sub{
+    font-size:16px;color:var(--ink-dim);line-height:1.55;max-width:38ch;margin-bottom:18px;
+  }
+  .pship-cta{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--accent);color:#0a0a0a;
+    padding:14px 22px;border-radius:2px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    transition:background .2s, transform .2s;
+    align-self:flex-start;
+  }
+  .pship-cta:hover{background:#fff;transform:translateY(-2px)}
+  .pship-cta .arr{transition:transform .3s}
+  .pship-cta:hover .arr{transform:translateX(4px)}
+
+  /* Audience pill toggle (Blank Apparel ↔ Ad Agency) */
+  .audience-toggle{
+    display:inline-flex;align-items:center;gap:0;
+    background:#0c0c0c;border:1px solid var(--rule);
+    border-radius:999px;padding:4px;margin-top:18px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  }
+  .audience-toggle button{
+    appearance:none;background:transparent;border:0;
+    color:var(--ink-dim);cursor:pointer;
+    padding:9px 18px;border-radius:999px;
+    font-family:inherit;font-size:inherit;letter-spacing:inherit;text-transform:inherit;
+    transition:color .25s, background .25s;
+    white-space:nowrap;
+  }
+  .audience-toggle button:hover{color:var(--ink)}
+  .audience-toggle button.active{
+    background:var(--accent);color:#0a0a0a;
+    box-shadow:0 4px 12px -2px rgba(229,9,20,.4);
+  }
+  .audience-toggle .at-label{
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;
+    color:var(--ink-faint);padding:0 12px 0 14px;
+  }
+
+  /* Sponsorship tiers section spacing */
+  #sponsorship{padding-bottom:0}
+
+  /* Branded Content Showcase */
+  #branded-content{padding-top: clamp(40px, 5vw, 72px)}
+  .bc-title{
+    text-align:center;
+    font-family:var(--display);font-size:clamp(36px,4.5vw,68px);font-weight:600;
+    letter-spacing:-.03em;line-height:1;
+    margin: 0 auto clamp(28px, 3vw, 48px);
+    background:linear-gradient(180deg, #fff 30%, var(--accent) 130%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+  }
+  .bc-row{
+    display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;
+    align-items:stretch;
+  }
+  .bc{
+    position:relative;margin:0;
+    aspect-ratio:3/4;
+    overflow:hidden;border-radius:3px;background:#0c0c0c;
+    border:1px solid var(--rule);
+    transition:border-color .35s, transform .35s;
+  }
+  .bc:hover{border-color:rgba(255,255,255,.22);transform:translateY(-3px);z-index:2}
+  .bc img, .bc video{
+    width:100%;height:100%;object-fit:cover;display:block;
+    transition:transform .6s cubic-bezier(.2,.6,.2,1);
+  }
+  .bc:hover img, .bc:hover video{transform:scale(1.03)}
+  @media (max-width:900px){
+    .bc-row{grid-template-columns:1fr;gap:10px}
+    .bc{aspect-ratio: 4/5}
+  }
+  .sponsor-head{
+    margin-bottom:32px;
+  }
+  .pc-eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:18px;
+    padding:6px 12px;border:1px solid var(--accent);border-radius:999px;
+    background:rgba(229,9,20,.08);
+  }
+  .pc-eyebrow b{font-weight:500;color:var(--ink);letter-spacing:.18em}
+  .pc-eyebrow::before{
+    content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 0 var(--accent);animation:pulse 2s infinite;
+  }
+  .sponsor-head h2{
+    font-family:var(--display);font-weight:500;letter-spacing:-.035em;line-height:.95;
+    font-size:clamp(40px, 6vw, 84px);margin:0 0 12px;max-width:18ch;
+  }
+  .sponsor-head .sub{
+    font-size:16px;color:var(--ink-dim);line-height:1.55;max-width:52ch;margin:0;
+  }
+
+  /* Stats strip */
+  .pship-stats{
+    display:grid;grid-template-columns:repeat(5,1fr);gap:0;
+    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    margin-bottom:64px;
+  }
+  @media (max-width:900px){ .pship-stats{grid-template-columns:repeat(2,1fr)} }
+  .pship-stat{
+    padding:28px 24px;border-right:1px solid var(--rule);
+    display:flex;flex-direction:column;gap:8px;
+  }
+  .pship-stat:last-child{border-right:0}
+  @media (max-width:900px){
+    .pship-stat{border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+    .pship-stat:nth-child(2n){border-right:0}
+    .pship-stat:nth-last-child(-n+2){border-bottom:0}
+    .pship-stat:last-child{border-bottom:0}
+  }
+  .pship-stat .n{
+    font-family:var(--display);font-size:clamp(32px,4vw,52px);font-weight:500;
+    letter-spacing:-.03em;line-height:1;color:var(--ink);
+  }
+  .pship-stat .n .accent{color:var(--accent)}
+  .pship-stat .n .pct{font-family:var(--mono);font-size:.4em;letter-spacing:.1em;margin-left:2px;vertical-align:baseline}
+  .pship-stat .l{
+    font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-dim);
+  }
+
+  /* Tier cards v3 — ascending desirability */
+  .ptiers{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch;
+    padding-top:32px; /* room for elevated cards' badges */
+  }
+  @media (max-width:920px){ .ptiers{grid-template-columns:1fr;padding-top:0} }
+
+  .ptier{
+    background:#0c0c0c;
+    border:1px solid var(--rule);
+    border-radius:4px;
+    padding:36px 28px 32px;
+    display:flex;flex-direction:column;
+    position:relative;
+    transition:border-color .35s ease, transform .35s ease, box-shadow .35s ease;
+    overflow:hidden;
+  }
+  /* Corner crosshairs — subtle texture, all tiers */
+  .ptier::before, .ptier::after{
+    content:"";position:absolute;width:10px;height:10px;
+    border-color:var(--ink-faint);opacity:.5;pointer-events:none;
+    transition:opacity .3s, border-color .3s;
+  }
+  .ptier::before{top:8px;left:8px;border-top:1px solid;border-left:1px solid}
+  .ptier::after{bottom:8px;right:8px;border-bottom:1px solid;border-right:1px solid}
+  .ptier:hover{border-color:var(--ink-faint);transform:translateY(-4px)}
+  .ptier:hover::before, .ptier:hover::after{opacity:1;border-color:var(--ink-dim)}
+
+  /* ── Tier 2 (cool) ── */
+  .ptier.cool{
+    border-color:rgba(255,255,255,.18);
+    transform:translateY(-12px);
+    padding-top:48px;
+    background:
+      radial-gradient(140% 60% at 50% -10%, rgba(255,255,255,.06), transparent 60%),
+      #0e0e0e;
+  }
+  .ptier.cool:hover{transform:translateY(-16px);border-color:rgba(255,255,255,.32)}
+  .ptier.cool::before, .ptier.cool::after{border-color:rgba(255,255,255,.28);opacity:.8}
+
+  /* ── Tier 3 (premium) — the show-stopper ── */
+  .ptier.most{
+    border-color:var(--accent);
+    transform:translateY(-22px);
+    padding-top:54px;
+    background:
+      radial-gradient(120% 50% at 50% -5%, oklch(0.78 0.16 50 / .22), transparent 55%),
+      linear-gradient(180deg, oklch(0.30 0.10 50 / .14), #0a0a0a 38%),
+      #0a0a0a;
+    box-shadow:
+      0 0 0 1px rgba(229,9,20,.35) inset,
+      0 40px 80px -24px rgba(229,9,20,.42),
+      0 0 1px rgba(229,9,20,.6);
+  }
+  .ptier.most:hover{transform:translateY(-28px); box-shadow:0 0 0 1px rgba(229,9,20,.55) inset, 0 50px 100px -24px rgba(229,9,20,.55)}
+  .ptier.most::before, .ptier.most::after{border-color:var(--accent);opacity:1;width:14px;height:14px}
+
+  /* Badges — distinct per tier */
+  .ptier .badge{
+    position:absolute;top:0;left:0;right:0;
+    text-align:center;padding:9px 8px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;
+    font-weight:600;
+  }
+  .ptier.cool .badge{
+    background:#fff;color:#0a0a0a;
+  }
+  .ptier.most .badge{
+    background:var(--accent);color:#0a0a0a;
+    box-shadow:0 8px 24px -6px rgba(229,9,20,.5);
+  }
+  .ptier.most .badge::before{
+    content:"★ ";letter-spacing:0;
+  }
+
+  /* Name */
+  .ptier .pt-name{
+    font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--ink-dim);margin-bottom:18px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .ptier .pt-name::after{
+    content:"";flex:1;height:1px;background:var(--rule);
+  }
+  .ptier.cool .pt-name{color:#fff}
+  .ptier.most .pt-name{color:var(--accent)}
+  .ptier.most .pt-name::after{background:rgba(229,9,20,.3)}
+
+  /* Price */
+  .ptier .pt-price{
+    display:flex;align-items:baseline;gap:2px;
+    font-family:var(--display);font-weight:500;letter-spacing:-.045em;
+    margin-bottom:10px;
+  }
+  .ptier .pt-price .cur{font-size:26px;color:var(--ink-dim);margin-right:2px}
+  .ptier .pt-price .amt{font-size:60px;line-height:1;color:var(--ink)}
+  .ptier.cool .pt-price .amt{font-size:68px}
+  .ptier.most .pt-price .amt{
+    font-size:76px;
+    background:linear-gradient(180deg, #fff 30%, var(--accent) 130%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .ptier .pt-price .per{
+    font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-dim);margin-left:8px;
+  }
+
+  /* Tagline */
+  .ptier .pt-tag{
+    font-family:var(--display);font-size:17px;font-weight:500;letter-spacing:-.01em;
+    color:var(--ink-dim);margin-bottom:24px;line-height:1.35;
+    min-height:3.6em;
+  }
+  .ptier.cool .pt-tag, .ptier.most .pt-tag{color:var(--ink)}
+
+  /* CTA */
+  .ptier .pt-cta{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    padding:15px 18px;border-radius:2px;
+    border:1px solid var(--ink-faint);color:var(--ink);
+    font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;
+    font-weight:600;
+    transition:background .2s, color .2s, border-color .2s, transform .2s;
+    margin-bottom:28px;
+    position:relative;
+  }
+  .ptier .pt-cta .arr{transition:transform .25s}
+  .ptier .pt-cta:hover{background:var(--ink);color:#0a0a0a;border-color:var(--ink)}
+  .ptier .pt-cta:hover .arr{transform:translateX(4px)}
+  .ptier.cool .pt-cta{background:#fff;color:#0a0a0a;border-color:#fff}
+  .ptier.cool .pt-cta:hover{background:transparent;color:#fff}
+  .ptier.most .pt-cta{
+    background:var(--accent);color:#0a0a0a;border-color:var(--accent);
+    box-shadow:0 14px 28px -10px rgba(229,9,20,.6);
+  }
+  .ptier.most .pt-cta:hover{background:#fff;border-color:#fff;transform:translateY(-2px)}
+
+  /* Feature heading */
+  .ptier .pt-feat-head{
+    font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--ink);margin-bottom:18px;font-weight:600;
+    padding-top:24px;border-top:1px solid var(--rule);
+    display:flex;align-items:center;gap:10px;
+  }
+  .ptier.most .pt-feat-head{
+    color:var(--accent);border-top-color:rgba(229,9,20,.3);
+  }
+  .ptier .pt-feat-head::before{
+    content:"";display:block;width:18px;height:1px;background:var(--ink-faint);
+  }
+  .ptier.most .pt-feat-head::before{background:var(--accent)}
+
+  /* Feature list */
+  .ptier .pt-list{
+    list-style:none;padding:0;margin:0;
+    display:flex;flex-direction:column;gap:14px;
+  }
+  .ptier .pt-list li{
+    display:flex;gap:12px;align-items:flex-start;
+    font-size:14px;line-height:1.55;color:var(--ink-dim);
+    transition:color .2s;
+  }
+  .ptier:hover .pt-list li{color:var(--ink)}
+  .ptier.cool .pt-list li, .ptier.most .pt-list li{color:var(--ink)}
+  .ptier .pt-list li::before{
+    content:"";display:block;flex:0 0 auto;margin-top:7px;
+    width:6px;height:6px;border-radius:50%;
+    background:var(--ink-faint);
+    transition:background .2s, box-shadow .2s;
+  }
+  .ptier:hover .pt-list li::before{background:var(--accent)}
+  .ptier.cool .pt-list li::before{background:#fff}
+  .ptier.most .pt-list li::before{
+    background:var(--accent);
+    box-shadow:0 0 0 3px rgba(229,9,20,.18);
+  }
+
+  .pship-title-row{
+    display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:8px;
+  }
+
+  /* ===== Single Package card ===== */
+  .ppackage{margin-top:8px}
+  .pkg-card{
+    position:relative;
+    background:linear-gradient(180deg,#0d0d0d 0%, #0a0a0a 100%);
+    border:1px solid var(--rule);
+    border-radius:4px;
+    padding:40px 44px 44px;
+    overflow:hidden;
+  }
+  .pkg-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:var(--accent);
+  }
+  .pkg-top{
+    display:flex;align-items:flex-end;justify-content:space-between;gap:32px;
+    padding-bottom:32px;border-bottom:1px solid var(--rule);margin-bottom:36px;
+    flex-wrap:wrap;
+  }
+  .pkg-eyebrow{
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:14px;
+  }
+  .pkg-name{
+    font-family:var(--display);font-weight:500;letter-spacing:-.03em;
+    font-size:clamp(28px,3.2vw,44px);line-height:1.05;color:var(--ink);
+    margin:0 0 12px;max-width:18ch;
+  }
+  .pkg-tag{
+    font-size:15px;line-height:1.55;color:var(--ink-dim);max-width:54ch;
+  }
+  .pkg-cta{
+    flex:0 0 auto;
+    display:inline-flex;align-items:center;gap:10px;
+    padding:16px 24px;
+    background:var(--accent);color:#0a0a0a;
+    text-decoration:none;border:1px solid var(--accent);border-radius:2px;
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    transition:background .25s,color .25s,border-color .25s;
+  }
+  .pkg-cta:hover{background:#fff;border-color:#fff}
+  .pkg-cta .arr{transition:transform .25s}
+  .pkg-cta:hover .arr{transform:translateX(4px)}
+
+  /* Price + top-right cluster */
+  .pkg-top-right{
+    display:flex;flex-direction:column;align-items:flex-end;gap:16px;flex:0 0 auto;
+  }
+  .pkg-price{
+    display:flex;align-items:baseline;gap:2px;
+    font-family:var(--display);font-weight:500;letter-spacing:-.04em;color:var(--ink);
+  }
+  .pkg-price .cur{font-size:24px;color:var(--ink-dim);margin-right:2px}
+  .pkg-price .amt{font-size:clamp(48px,5vw,68px);line-height:1}
+  .pkg-price .per{
+    font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-dim);margin-left:8px;
+  }
+
+  /* Proof of repost gallery */
+  .pkg-proof{
+    margin-bottom:36px;padding-bottom:36px;
+    border-bottom:1px solid var(--rule);
+  }
+  .pkg-proof-head{
+    display:flex;align-items:baseline;justify-content:space-between;gap:24px;
+    margin-bottom:20px;flex-wrap:wrap;
+  }
+  .pkg-proof-label{
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--accent);
+  }
+  .pkg-proof-sub{
+    font-size:13px;color:var(--ink-dim);
+  }
+  .pkg-proof-row{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+  }
+  .pkg-proof-card{
+    margin:0;position:relative;
+    background:#000;border:1px solid var(--rule);border-radius:3px;
+    overflow:hidden;
+    aspect-ratio: 9 / 16;
+    transition:border-color .3s, transform .3s;
+  }
+  .pkg-proof-card:hover{border-color:var(--ink-faint);transform:translateY(-2px)}
+  .pkg-proof-card img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    filter:saturate(.85);
+  }
+  .pkg-proof-card figcaption{
+    position:absolute;left:0;right:0;bottom:0;
+    display:flex;justify-content:space-between;align-items:center;gap:8px;
+    padding:10px 12px;
+    background:linear-gradient(180deg, transparent 0%, rgba(0,0,0,.85) 60%);
+    font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  }
+  .pkg-proof-card figcaption .h{color:var(--ink)}
+  .pkg-proof-card figcaption .m{color:var(--ink-dim)}
+  @media (max-width:640px){
+    .pkg-proof-row{grid-template-columns:repeat(3,1fr);gap:8px}
+    .pkg-proof-card figcaption{padding:8px 8px;font-size:9px}
+  }
+
+  .pkg-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);
+    gap:0;
+  }
+  .pkg-group{
+    padding:28px 32px 28px 0;
+    border-right:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+  }
+  .pkg-group:nth-child(2n){padding-right:0;padding-left:32px;border-right:0}
+  .pkg-group:nth-last-child(-n+2){border-bottom:0;padding-bottom:0}
+  .pkg-group:nth-child(n+3){padding-top:32px}
+  .pkg-idx{
+    font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--ink-faint);
+    margin-bottom:10px;
+  }
+  .pkg-head{
+    font-family:var(--display);font-weight:500;letter-spacing:-.025em;
+    font-size:clamp(22px,2.2vw,30px);line-height:1.1;
+    color:var(--accent);margin-bottom:18px;
+  }
+  .pkg-list{
+    list-style:none;padding:0;margin:0;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .pkg-list li{
+    display:flex;gap:14px;align-items:flex-start;
+    font-size:15px;line-height:1.5;color:var(--ink);
+  }
+  .pkg-list li::before{
+    content:"";display:block;flex:0 0 auto;margin-top:9px;
+    width:5px;height:5px;background:var(--accent);transform:rotate(45deg);
+  }
+  .pkg-list li.sub{
+    margin-left:18px;font-size:14px;color:var(--ink-dim);
+  }
+  .pkg-list li.sub::before{
+    width:14px;height:1px;background:var(--ink-faint);transform:none;margin-top:12px;
+  }
+  @media (max-width:820px){
+    .pkg-card{padding:28px 22px 30px}
+    .pkg-grid{grid-template-columns:1fr}
+    .pkg-group{padding:22px 0;border-right:0}
+    .pkg-group:nth-child(2n){padding-left:0}
+    .pkg-group:nth-last-child(-n+2){border-bottom:1px solid var(--rule)}
+    .pkg-group:last-child{border-bottom:0}
+    .pkg-top{flex-direction:column;align-items:flex-start;gap:24px}
+    .pkg-top-right{align-items:flex-start;flex-direction:row;justify-content:space-between;width:100%;flex-wrap:wrap;gap:18px}
+    .pkg-cta{flex:1 1 auto;justify-content:center}
+  }
+  @media (max-width:520px){
+    .pkg-top-right{flex-direction:column;align-items:stretch}
+    .pkg-cta{width:100%}
+    .pkg-price{justify-content:flex-start}
+  }
+
+  /* =========================================================
+     CONTACT
+  ========================================================= */
+  .cta{
+    padding: clamp(80px,12vw,160px) var(--pad);
+    text-align:left;position:relative;overflow:hidden;
+    border-top:1px solid var(--rule);
+  }
+  .cta h2{font-size:clamp(40px,8vw,140px);line-height:.95;letter-spacing:-.04em;font-weight:500;max-width:14ch;overflow-wrap:break-word;hyphens:auto}
+  .cta h2 .accent{color:var(--accent)}
+  .cta-row{
+    display:grid;grid-template-columns:1.3fr 1fr;gap:48px;margin-top:48px;align-items:end;
+  }
+  @media (max-width:820px){ .cta-row{grid-template-columns:1fr} }
+  .contact-card{
+    border:1px solid var(--rule);border-radius:3px;padding:28px;display:flex;flex-direction:column;gap:18px;
+    background:#0c0c0c;
+  }
+  .contact-card .row{display:flex;justify-content:space-between;gap:14px;padding-bottom:14px;border-bottom:1px solid var(--rule);min-width:0}
+  .contact-card .row:last-child{border-bottom:0;padding-bottom:0}
+  .contact-card .k{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);flex:0 0 auto}
+  .contact-card .v{font-family:var(--display);font-size:18px;font-weight:500;letter-spacing:-.01em;text-align:right;min-width:0;overflow-wrap:anywhere;word-break:break-word}
+  @media (max-width:560px){
+    .contact-card .row{flex-direction:column;gap:6px}
+    .contact-card .v{text-align:left;font-size:17px}
+  }
+  .cta-btn{
+    display:inline-flex;align-items:center;gap:14px;
+    padding:18px 28px;border-radius:999px;background:var(--accent);color:#0a0a0a;
+    font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;
+    transition:transform .25s, background .25s;
+    margin-top:32px;
+  }
+  .cta-btn:hover{transform:translateY(-2px);background:var(--ink)}
+  .cta-btn .dot{width:8px;height:8px;border-radius:50%;background:#0a0a0a}
+
+  .footer{
+    padding:28px var(--pad);
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    border-top:1px solid var(--rule);
+    font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim)
+  }
+  .footer b{color:var(--ink);font-weight:500}
+
+  /* ---------- TWEAKS PANEL ---------- */
+  #tweaks{
+    position:fixed;right:18px;bottom:18px;z-index:100;
+    width:280px;background:#111;border:1px solid var(--rule);border-radius:6px;
+    padding:16px;display:none;font-family:var(--mono);
+    box-shadow:0 40px 80px rgba(0,0,0,.5);
+  }
+  #tweaks.on{display:block}
+  #tweaks h4{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);margin:0 0 12px;font-weight:400}
+  #tweaks .group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+  #tweaks label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim)}
+  #tweaks .swatches{display:flex;gap:6px}
+  #tweaks .sw{width:26px;height:26px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:border-color .2s}
+  #tweaks .sw.on{border-color:var(--ink)}
+  #tweaks select, #tweaks input[type=range]{width:100%;background:#0a0a0a;color:var(--ink);border:1px solid var(--rule);padding:6px;font:inherit;font-size:11px;border-radius:3px}
+</style>
+
+<!-- ====== PROJECT CASTING — TAILORED STYLES ====== -->
+<style>
+  :root{
+    --pc-red: #E63946;           /* casting call red */
+    --pc-red-deep: #C81E2C;
+    --pc-tape: #F4D35E;          /* gaffer tape yellow */
+    --pc-slate: #1a1a1a;
+  }
+
+  /* ---------- PRODUCTION BRIEF / SLATE ---------- */
+  #brief{
+    padding: clamp(56px,7vw,100px) var(--pad);
+    background:
+      repeating-linear-gradient(135deg, transparent 0 28px, rgba(255,255,255,0.012) 28px 29px),
+      #0a0a0a;
+    border-top:1px solid var(--rule);
+  }
+  .brief-wrap{
+    display:grid;grid-template-columns: 1.05fr 1fr; gap: 40px;
+    align-items:stretch;
+  }
+  @media (max-width: 980px){ .brief-wrap{grid-template-columns:1fr;gap:24px} }
+
+  /* Clapperboard slate */
+  .slate{
+    position:relative;
+    background: #0e0e0e;
+    border:1px solid #2a2724;
+    border-radius:6px;
+    padding: 22px 28px 28px;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.04);
+    overflow:hidden;
+    font-family: var(--mono);
+    color: var(--ink);
+  }
+  .slate::before{
+    /* clapper top stripes */
+    content:"";display:block;height:34px;margin:-22px -28px 22px;
+    background:
+      repeating-linear-gradient(90deg, #f3efe6 0 28px, #0a0a0a 28px 56px);
+    transform: skewY(-4deg);
+    transform-origin: top left;
+    box-shadow: 0 6px 0 rgba(0,0,0,.5);
+  }
+  .slate-head{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding-bottom:14px;border-bottom:1px dashed #2a2724;margin-bottom:18px;
+    font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .slate-head .scene{
+    color:var(--pc-red);font-weight:600;
+  }
+  .slate-rows{display:grid;grid-template-columns: 110px 1fr;row-gap:11px;column-gap:18px;align-items:baseline}
+  .slate-rows dt{
+    font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .slate-rows dd{
+    margin:0;font-family:var(--display);font-weight:500;font-size:18px;letter-spacing:-.01em;color:var(--ink);
+    line-height:1.15;
+  }
+  .slate-rows dd.big{font-size:26px;letter-spacing:-.02em;color:var(--pc-red);font-weight:600}
+  .slate-rows dd em{font-style:normal;color:var(--ink-dim);font-weight:400}
+  .slate-foot{
+    margin-top:22px;padding-top:14px;border-top:1px dashed #2a2724;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+    font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .slate-foot .stamp{
+    display:inline-flex;align-items:center;gap:8px;
+    border:2px solid var(--pc-red);color:var(--pc-red);font-weight:600;
+    padding:6px 14px;border-radius:4px;
+    transform: rotate(-2deg);
+    letter-spacing:.18em;
+  }
+  .slate-foot .stamp::before{
+    content:"";width:8px;height:8px;border-radius:50%;background:var(--pc-red);
+  }
+
+  /* Brief copy column */
+  .brief-copy{display:flex;flex-direction:column;justify-content:center;padding:8px 4px}
+  .brief-copy .label{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--pc-red);margin-bottom:18px;
+  }
+  .brief-copy .label::before{
+    content:"";width:18px;height:1px;background:var(--pc-red);
+  }
+  .brief-copy h2{
+    font-family:var(--display);font-weight:500;letter-spacing:-.035em;line-height:.95;
+    font-size:clamp(36px,4.4vw,60px);margin:0 0 18px;
+  }
+  .brief-copy h2 em{font-style:italic;font-weight:300;color:var(--pc-red)}
+  .brief-copy p{font-size:16px;line-height:1.55;color:var(--ink-dim);max-width:48ch;margin:0 0 12px}
+  .brief-copy .meta-strip{
+    display:flex;gap:24px;flex-wrap:wrap;margin-top:18px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .brief-copy .meta-strip span b{color:var(--ink);font-weight:500}
+
+  /* ---------- CASTING BOARD ---------- */
+  .cast-board-head{
+    display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:28px;flex-wrap:wrap;
+  }
+  .cast-board-head h2{
+    font-family:var(--display);font-weight:500;letter-spacing:-.035em;line-height:.95;
+    font-size:clamp(36px,4.4vw,64px);margin:0;max-width:18ch;
+  }
+  .cast-board-head h2 em{font-style:italic;font-weight:300;color:var(--pc-red)}
+  .cast-board-head .note{
+    font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);max-width:32ch;line-height:1.5;
+  }
+  .cast-board{
+    position:relative;
+    background:
+      repeating-linear-gradient(0deg, transparent 0 38px, rgba(255,255,255,0.018) 38px 39px),
+      repeating-linear-gradient(90deg, transparent 0 38px, rgba(255,255,255,0.018) 38px 39px),
+      #0c0a08;
+    border:1px solid var(--rule);
+    border-radius:3px;
+    padding: 40px 32px 36px;
+    box-shadow: inset 0 0 80px rgba(0,0,0,.6);
+  }
+  .cast-board::before{
+    /* "PROOF" / tape header strip */
+    content:"";position:absolute;top:0;left:50%;transform:translate(-50%, -50%) rotate(-1.5deg);
+    width:240px;height:28px;
+    background:var(--pc-tape);
+    box-shadow:0 4px 12px rgba(0,0,0,.4);
+    z-index:5;
+  }
+  .cast-board::after{
+    content:"PROJECT CASTING — TALENT POOL · ATL";
+    position:absolute;top:0;left:50%;transform:translate(-50%, -50%) rotate(-1.5deg);
+    width:240px;height:28px;display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:#0a0a0a;font-weight:600;
+    z-index:6;text-align:center;
+  }
+  .cast-grid{
+    display:grid;grid-template-columns: repeat(8, 1fr);gap:14px;
+    margin-top:22px;
+  }
+  @media (max-width:1100px){.cast-grid{grid-template-columns: repeat(5, 1fr)}}
+  @media (max-width:640px){.cast-grid{grid-template-columns: repeat(3, 1fr);gap:10px}}
+  .polaroid{
+    position:relative;background:#f3efe6;padding:8px 8px 28px;border-radius:2px;
+    box-shadow: 0 6px 14px rgba(0,0,0,.5), 0 1px 0 rgba(255,255,255,.06) inset;
+    transform: rotate(var(--r, -1.5deg));
+    transition: transform .35s cubic-bezier(.2,.6,.2,1), box-shadow .35s;
+    cursor:default;
+  }
+  .polaroid:hover{transform: rotate(0) translateY(-4px) scale(1.04);box-shadow:0 16px 30px rgba(0,0,0,.6);z-index:3}
+  .polaroid .frame{
+    position:relative;aspect-ratio: 3/4;background:#0a0a0a;overflow:hidden;
+  }
+  .polaroid .frame img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    filter: grayscale(.4) contrast(1.05) brightness(.95);
+  }
+  .polaroid .tag{
+    position:absolute;left:8px;right:8px;bottom:6px;
+    font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:#1a1a1a;
+    display:flex;justify-content:space-between;
+  }
+  .polaroid .tag .role{color:var(--pc-red-deep);font-weight:600}
+  /* tape on every other polaroid */
+  .polaroid::before{
+    content:"";position:absolute;top:-8px;left:50%;transform:translateX(-50%) rotate(-3deg);
+    width:38px;height:14px;background:rgba(244, 211, 94, 0.7);
+    box-shadow:0 2px 4px rgba(0,0,0,.3);
+  }
+  .polaroid:nth-child(3n)::before{transform:translateX(-50%) rotate(4deg);background:rgba(230,57,70,0.55)}
+  .polaroid:nth-child(5n)::before{display:none}
+  .polaroid:nth-child(7n)::before{transform:translateX(-50%) rotate(-6deg);width:48px;background:rgba(245,241,234,0.7)}
+  .polaroid:nth-child(odd){--r: 1.2deg}
+  .polaroid:nth-child(3n){--r: -2.2deg}
+  .polaroid:nth-child(5n){--r: 0.6deg}
+  .polaroid:nth-child(7n){--r: -1deg}
+
+  .cast-board-foot{
+    margin-top:30px;padding-top:22px;border-top:1px dashed #2a2724;
+    display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+    font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .cast-board-foot b{color:var(--pc-red);font-weight:500}
+
+  /* ---------- STORYBOARD ---------- */
+  .sb-head{margin-bottom:28px}
+  .sb-head h2{
+    font-family:var(--display);font-weight:500;letter-spacing:-.035em;line-height:.95;
+    font-size:clamp(36px,4.4vw,64px);margin:0 0 14px;max-width:20ch;
+  }
+  .sb-head h2 em{font-style:italic;font-weight:300;color:var(--pc-red)}
+  .sb-head p{font-size:15px;line-height:1.55;color:var(--ink-dim);max-width:54ch;margin:0}
+
+  .storyboard{
+    display:grid;grid-template-columns: repeat(5, 1fr);gap:14px;
+    counter-reset: frame;
+  }
+  @media (max-width:1100px){.storyboard{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:640px){.storyboard{grid-template-columns:repeat(2,1fr);gap:10px}}
+  .frame{
+    position:relative;background:#0c0c0c;border:1px solid var(--rule);border-radius:3px;
+    overflow:hidden;display:flex;flex-direction:column;
+    transition: transform .3s, border-color .3s;
+  }
+  .frame:hover{transform:translateY(-3px);border-color:var(--ink-faint)}
+  .frame .sb-window{
+    position:relative;aspect-ratio: 16/12;background:#070707;overflow:hidden;
+    border-bottom:1px solid var(--rule);
+  }
+  .frame .sb-window::before{
+    /* Letterbox bars */
+    content:"";position:absolute;left:0;right:0;top:0;height:10px;
+    background:#000;z-index:2;border-bottom:1px solid rgba(255,255,255,.04);
+  }
+  .frame .sb-window::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:10px;
+    background:#000;z-index:2;border-top:1px solid rgba(255,255,255,.04);
+  }
+  .frame .sb-window img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    filter: grayscale(.5) contrast(1.05) brightness(.85);
+    transition: transform .8s cubic-bezier(.2,.6,.2,1), filter .6s;
+  }
+  .frame:hover .sb-window img{transform:scale(1.05);filter:none}
+  .frame .sb-num{
+    position:absolute;top:14px;left:12px;z-index:3;
+    font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:#fff;
+    background:rgba(0,0,0,.7);padding:4px 8px;border-radius:2px;
+  }
+  .frame .sb-num b{color:var(--pc-red);font-weight:500}
+  .frame .sb-time{
+    position:absolute;top:14px;right:12px;z-index:3;
+    font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:#fff;
+    background:rgba(0,0,0,.7);padding:4px 8px;border-radius:2px;
+  }
+  .frame .sb-body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+  .frame .sb-shot{
+    font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--pc-red);
+  }
+  .frame .sb-title{
+    font-family:var(--display);font-size:18px;letter-spacing:-.015em;color:var(--ink);font-weight:500;line-height:1.15;
+  }
+  .frame .sb-desc{
+    font-size:12.5px;line-height:1.5;color:var(--ink-dim);margin-top:auto;
+  }
+
+  /* ---------- CALL SHEET ---------- */
+  #callsheet{
+    background:
+      repeating-linear-gradient(0deg, transparent 0 32px, rgba(255,255,255,0.02) 32px 33px),
+      #0a0a0a;
+  }
+  .cs-wrap{
+    background:#0c0c0c;border:1px solid var(--rule);border-radius:4px;
+    padding: 32px 36px 36px;position:relative;overflow:hidden;
+  }
+  .cs-wrap::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:6px;
+    background: var(--pc-red);
+  }
+  .cs-top{
+    display:grid;grid-template-columns: 2fr 1fr 1fr;gap:24px;
+    padding-bottom:22px;border-bottom:1px dashed #2a2724;margin-bottom:24px;
+  }
+  @media (max-width:820px){.cs-top{grid-template-columns:1fr 1fr;gap:18px}}
+  .cs-top .col{display:flex;flex-direction:column;gap:6px}
+  .cs-top .k{font-family:var(--mono);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim)}
+  .cs-top .v{font-family:var(--display);font-size:clamp(18px,2vw,24px);font-weight:500;letter-spacing:-.02em;color:var(--ink)}
+  .cs-top .v.red{color:var(--pc-red)}
+
+  .cs-grid{
+    display:grid;grid-template-columns: 110px 1fr 1.4fr 0.9fr;
+    column-gap:18px;
+  }
+  .cs-grid > div{padding:14px 0;border-bottom:1px dashed #1f1e1b;font-size:13.5px}
+  .cs-grid > div.head{
+    font-family:var(--mono);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-dim);
+    border-bottom:1px solid var(--rule);padding:0 0 10px;
+  }
+  .cs-grid > div:last-child:not(.head){border-bottom:0}
+  .cs-grid .time{font-family:var(--mono);font-size:12px;letter-spacing:.05em;color:var(--pc-red);font-weight:500}
+  .cs-grid .title{font-family:var(--display);font-size:16px;font-weight:500;letter-spacing:-.01em;color:var(--ink)}
+  .cs-grid .desc{color:var(--ink-dim);line-height:1.5}
+  .cs-grid .own{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
+  .cs-grid .own .badge{
+    display:inline-block;border:1px solid var(--ink-faint);padding:3px 8px;border-radius:2px;color:var(--ink-dim);
+  }
+  .cs-grid .own .badge.pc{border-color:var(--pc-red);color:var(--pc-red)}
+  @media (max-width:780px){
+    .cs-grid{grid-template-columns: 1fr;column-gap:0}
+    .cs-grid > div.head{display:none}
+    .cs-grid > div:not(.head){padding:14px 0;border-bottom:0;border-top:1px dashed #1f1e1b}
+    .cs-grid .time{padding-bottom:4px}
+    .cs-grid .title{padding-bottom:4px}
+  }
+
+  /* ---------- PC-RED ACCENTS ON EXISTING ELEMENTS ---------- */
+  .pc-pill{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--pc-red);border:1px solid var(--pc-red);
+    padding:5px 12px;border-radius:999px;
+  }
+  .pc-pill::before{
+    content:"";width:6px;height:6px;border-radius:50%;background:var(--pc-red);
+  }
+
+  /* ---------- METRICS BAR (intercut PC stats) ---------- */
+  .pc-metrics{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+    border:1px solid var(--rule);border-radius:3px;overflow:hidden;
+    margin-top:32px;background:#0a0a0a;
+  }
+  @media (max-width:780px){.pc-metrics{grid-template-columns:repeat(2,1fr)}}
+  .pc-metric{
+    padding:22px 20px;border-right:1px solid var(--rule);
+    display:flex;flex-direction:column;gap:6px;
+    position:relative;
+  }
+  .pc-metric:last-child{border-right:0}
+  .pc-metric .n{
+    font-family:var(--display);font-size:clamp(28px,3vw,40px);font-weight:500;letter-spacing:-.03em;
+    line-height:1;color:var(--pc-red);
+  }
+  .pc-metric .l{
+    font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);
+  }
+  .pc-metric .d{font-size:12px;line-height:1.5;color:var(--ink-dim);margin-top:4px}
+  @media (max-width:780px){
+    .pc-metric{border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+    .pc-metric:nth-child(2n){border-right:0}
+    .pc-metric:nth-last-child(-n+2){border-bottom:0}
+  }
+
+</style>
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<nav class="nav">
+  <a href="#top" class="logo" aria-label="Unfazed Exhibit"><img src="uploads/NEW UNFAZED LOGO.png" alt="Unfazed"></a>
+  <div class="links">
+    <a href="#numbers">01 Reach</a>
+    <a href="#hosts">02 Hosts</a>
+    <a href="#experience">03 Experience</a>
+    <a href="#audience">04 Audience</a>
+    <a href="#cast-board" hidden>05 Cast</a>
+    <a href="#sponsorship">06 Sponsor</a>
+    <a href="#tiers">07 Partner</a>
+    <a href="#callsheet">08 Call Sheet</a>
+    <a href="#contact">09 Contact</a>
+  </div>
+  <a href="#contact" class="cta">Prepared For Project Casting →</a>
+</nav>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="top">
+  <!-- Collage mosaic -->
+  <div class="collage" aria-hidden="true">
+    <div class="tile" style="background-image:url('uploads/IMG_5521.JPG')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0331.JPEG')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0339.JPEG')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0181.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0180.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0179.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0178.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0176.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0175.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0174.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_1201.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_1198.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_1197.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0181.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0179.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0175.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_1198.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0174.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0178.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0180.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0339.JPEG')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_1197.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_0176.jpeg')"></div>
+    <div class="tile" style="background-image:url('uploads/IMG_1201.jpeg')"></div>
+  </div>
+
+  <!-- Top strip -->
+  <div class="hero-top">
+    <div class="doc">
+      <span>Doc · <b>UFZ-PC-FY26-01</b></span>
+      <span>Prepared <b>May 14, 2026</b></span>
+    </div>
+    <div class="stamp-conf">Confidential · For PC Review</div>
+  </div>
+
+  <!-- Co-brand lockup + headline -->
+  <div class="hero-cobrand">
+    <div class="hc-eyebrow">A Sponsorship Proposal &nbsp; · &nbsp; <b>FY26</b></div>
+
+    <div class="hc-lockup">
+      <div class="hc-pc">
+        <div class="pc-mark">PROJECT<br/><span>CASTING</span></div>
+        <div class="pc-sub">Built For Creators · Powered By Opportunities</div>
+      </div>
+      <div class="hc-x">×</div>
+      <div class="hc-uf">
+        <img src="uploads/NEW UNFAZED LOGO.png" alt="Unfazed Exhibit" />
+        <div class="uf-sub">Atlanta's Most Viral Streetwear Event</div>
+      </div>
+    </div>
+
+    <h1 class="hc-title">An exclusive in-person <em>talent acquisition</em> channel — purpose-built for Project Casting.</h1>
+    <p class="hc-deck">
+      Eight editions a year. Two thousand creators, models &amp; content makers in the room each night. Ninety+ founder-led brands actively hiring talent. This deck outlines what an exclusive Project Casting sponsorship of Unfazed Exhibit looks like — and what it will deliver.
+    </p>
+
+    <div class="hc-meta">
+      <div class="item"><span class="k">Audience</span><span class="v">2,000+ creators</span></div>
+      <div class="item"><span class="k">Editions</span><span class="v">8 / FY26</span></div>
+      <div class="item"><span class="k">Reach</span><span class="v">6M+ / edition</span></div>
+      <div class="item"><span class="k">Hosts</span><span class="v">50M+ followers</span></div>
+    </div>
+
+    <div class="hc-actions">
+      <a class="hc-cta" href="#brief">Open The Brief <span class="arr">→</span></a>
+      <a class="hc-cta-ghost" href="#contact">Reach Out</a>
+    </div>
+  </div>
+
+  <!-- Bottom strip -->
+  <div class="hero-foot">
+    <div class="l">
+      <span><b>01</b> · The Brief</span>
+      <span><b>02</b> · Reach &amp; Hosts</span>
+      <span><b>03</b> · Activation</span>
+      <span><b>04</b> · Sponsorship</span>
+      <span><b>05</b> · Call Sheet</span>
+    </div>
+    <a href="#brief" class="r">Scroll <span class="arr"></span></a>
+  </div>
+</section>
+
+<!-- ====== TICKER ====== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>6M+ VIEWS / EDITION</span><span>2,161 PEAK ATTENDANCE</span><span>850K+ CREATORS ON PROJECT CASTING</span><span>~1,000 SIGNUPS / EDITION (PROJECTED)</span><span>90+ FOUNDER-LED BRANDS HIRING TALENT</span><span>POWERED BY PROJECT CASTING</span>
+    <span>6M+ VIEWS / EDITION</span><span>2,161 PEAK ATTENDANCE</span><span>850K+ CREATORS ON PROJECT CASTING</span><span>~1,000 SIGNUPS / EDITION (PROJECTED)</span><span>90+ FOUNDER-LED BRANDS HIRING TALENT</span><span>POWERED BY PROJECT CASTING</span>
+  </div>
+</div>
+
+<!-- ====== PRODUCTION BRIEF / SLATE ====== -->
+<section id="brief">
+  <div class="meta">
+    <div class="idx">00.5 / THE BRIEF</div>
+    <div>PRODUCTION BRIEF · SLATE 01</div>
+  </div>
+
+  <div class="brief-wrap">
+    <!-- Clapperboard slate -->
+    <div class="slate reveal">
+      <div class="slate-head">
+        <span>Slate / Take 01</span>
+        <span class="scene">SCENE 26.06 · FY26</span>
+      </div>
+      <dl class="slate-rows">
+        <dt>Production</dt><dd class="big">Unfazed Exhibit · ATL</dd>
+        <dt>Role</dt><dd>Presenting Sponsor <em>· category exclusive</em></dd>
+        <dt>Casting</dt><dd style="color:var(--pc-red);font-weight:600">Project Casting</dd>
+        <dt>Talent Pool</dt><dd>2,000+ creators in-room / edition</dd>
+        <dt>Editions</dt><dd>8 / FY26 · Jun → Dec</dd>
+        <dt>Director</dt><dd>LaBaron Reid · Host</dd>
+        <dt>Location</dt><dd>Atlanta, GA</dd>
+        <dt>Format</dt><dd>Live activation + 8-week direct marketing</dd>
+      </dl>
+      <div class="slate-foot">
+        <span>Doc ID · UFZ-PC-FY26-01</span>
+        <span class="stamp">Ready For Pickup</span>
+      </div>
+    </div>
+
+    <!-- Brief copy -->
+    <div class="brief-copy reveal d1">
+      <div class="label">A proposal to Project Casting</div>
+      <h2>Cast Unfazed as Project Casting's <em>in-person stage.</em></h2>
+      <p>
+        You spent a decade becoming the platform creators trust to find paid work.
+        We spent three years building the only room in Atlanta where those creators
+        actually show up — and the founder-led brands hiring them already walk the floor.
+      </p>
+      <p>
+        This brief outlines what an exclusive Project Casting partnership looks like:
+        a co-branded Talent Lounge, live signup capture, three host-amplified content
+        drops, and eight weeks of direct marketing into our owned audience —
+        attributable, exclusive, and ready to greenlight.
+      </p>
+      <div class="meta-strip">
+        <span><b>Window:</b> FY26 (Jun – Dec)</span>
+        <span><b>Status:</b> 1 slot open</span>
+        <span><b>Decision by:</b> Jun 1, 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PC-specific metrics bar -->
+  <div class="pc-metrics reveal d2">
+    <div class="pc-metric">
+      <div class="n">850K+</div>
+      <div class="l">Creators on PC</div>
+      <div class="d">Project Casting's existing talent pool — Unfazed funnels new profiles into the same base.</div>
+    </div>
+    <div class="pc-metric">
+      <div class="n">~1,000</div>
+      <div class="l">Est. signups / edition</div>
+      <div class="d">QR-driven creator profile creations from a co-branded Talent Lounge.</div>
+    </div>
+    <div class="pc-metric">
+      <div class="n">90+</div>
+      <div class="l">Brand-side leads</div>
+      <div class="d">Founder-led brands per edition — direct pipeline for PC Enterprise.</div>
+    </div>
+    <div class="pc-metric">
+      <div class="n">8 wks</div>
+      <div class="l">Owned-channel push</div>
+      <div class="d">SMS + IG story drops post-event, UTM-tagged for clean attribution.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== NUMBERS ====== -->
+<section class="section" id="numbers">
+  <div class="meta"><div class="idx">01 / BY THE NUMBERS</div><div>FY25 CUMULATIVE</div></div>
+  <h2 class="h-xl reveal" style="max-width:18ch;margin-bottom:32px">
+    A platform built on <span style="color:var(--accent)">scale,</span> not hype.
+  </h2>
+
+  <div class="nums reveal">
+    <div class="cell" data-num="6" data-suffix="M+">
+      <div><div class="lbl">Total Reach</div><div class="val">0<span class="unit">views</span></div></div>
+      <div class="desc">Combined social impressions across host, attendee and partner content per edition.</div>
+      <div class="idx">N.01</div>
+    </div>
+    <div class="cell" data-num="2161" data-suffix="" data-format="comma">
+      <div><div class="lbl">Peak Attendance</div><div class="val">0<span class="unit">ppl</span></div></div>
+      <div class="desc">DDG edition. Every edition sold out at the door, avg. 2,000+ attendees.</div>
+      <div class="idx">N.02</div>
+    </div>
+    <div class="cell" data-num="21" data-suffix="">
+      <div><div class="lbl">Editions Produced</div><div class="val">0<span class="unit">runs</span></div></div>
+      <div class="desc">Since 2023. Each one bigger than the last. Zero repeat sponsors lost.</div>
+      <div class="idx">N.03</div>
+    </div>
+    <div class="cell" data-num="14" data-suffix="K">
+      <div><div class="lbl">Owned Audience</div><div class="val">0<span class="unit">SMS+email</span></div></div>
+      <div class="desc">11K email list + 3K SMS. 42.7% open rate. Pre-sale access = primary conversion.</div>
+      <div class="idx">N.04</div>
+    </div>
+    <div class="cell" data-num="90" data-suffix="+">
+      <div><div class="lbl">Independent Brands</div><div class="val">0<span class="unit">vendors</span></div></div>
+      <div class="desc">Curated streetwear, jewelry and lifestyle designers per edition.</div>
+      <div class="idx">N.05</div>
+    </div>
+    <div class="cell" data-num="14" data-suffix="M">
+      <div><div class="lbl">Avg Host Following</div><div class="val">0<span class="unit">IG followers</span></div></div>
+      <div class="desc">Lil Yachty 24.5M · DDG 17M · Duke Dennis 15.7M · Fanum 10.1M · Quan 3M.</div>
+      <div class="idx">N.06</div>
+    </div>
+    <div class="cell" data-num="86.2" data-suffix="%">
+      <div><div class="lbl">Non-Follower Reach</div><div class="val">0<span class="unit">of views</span></div></div>
+      <div class="desc">86.2% of views come from non-followers — true discovery, not just existing audience.</div>
+      <div class="idx">N.07</div>
+    </div>
+    <div class="cell" data-num="1400" data-suffix="" data-format="comma">
+      <div><div class="lbl">Brand Rolodex</div><div class="val">0<span class="unit">streetwear</span></div></div>
+      <div class="desc">Direct line to 1,400 streetwear founders. Plus 400+ in our dedicated community.</div>
+      <div class="idx">N.08</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FLYERS MARQUEE ====== -->
+<section class="flyers" aria-label="Event flyers">
+  <div class="flyers-head">
+    <div class="kicker">01.5 / The Archive</div>
+    <div class="flyers-meta">5 sold-out editions · 2024 — 2026</div>
+  </div>
+
+  <div class="flyers-row">
+    <div class="flyers-track">
+      <figure class="flyer"><img src="uploads/YachtyUnfazedFlyer2.JPEG" alt="Unfazed x Lil Yachty"><figcaption>Lil Yachty · Apr '26</figcaption></figure>
+      <figure class="flyer"><img src="uploads/IMG_1861.JPG" alt="Unfazed x Lil Yachty"><figcaption>Lil Yachty · Feb '26</figcaption></figure>
+      <figure class="flyer"><img src="uploads/IMG_0130.jpg" alt="Unfazed x Quan"><figcaption>Quan · Feb '26</figcaption></figure>
+      <figure class="flyer"><img src="uploads/IMG_0209.jpg" alt="Unfazed x DDG"><figcaption>DDG · Jun '26</figcaption></figure>
+      <figure class="flyer"><img src="uploads/IMG_0364.jpeg" alt="Unfazed x Quavo"><figcaption>Quavo · Aug '26</figcaption></figure>
+      <figure class="flyer"><img src="uploads/DukeDennisUnfazedFlyer.JPG" alt="Unfazed x Duke Dennis"><figcaption>Duke Dennis · Dec '25</figcaption></figure>
+      <figure class="flyer"><img src="uploads/DDGUnfazed2026_Updated.JPEG" alt="Unfazed x DDG"><figcaption>DDG · Jun '26 · Vendors</figcaption></figure>
+      <figure class="flyer"><img src="uploads/IMG_5668.JPG" alt="Unfazed x Fanum"><figcaption>Fanum · Sep '26</figcaption></figure>
+      <figure class="flyer"><img src="uploads/IMG_3945.JPG" alt="Unfazed x DDG"><figcaption>DDG · OTE Arena</figcaption></figure>
+      <figure class="flyer"><img src="uploads/DukeDennisUnfazedFlyerVendors.JPEG" alt="Unfazed x Duke Dennis"><figcaption>Duke Dennis · Vendors</figcaption></figure>
+      <figure class="flyer"><img src="uploads/Yachty2026UnfazedFlyerVendors.JPEG" alt="Unfazed x Lil Yachty"><figcaption>Lil Yachty · Vendors</figcaption></figure>
+      <figure class="flyer"><img src="uploads/Quan2UnfazedFlyerVendors2.JPEG" alt="Unfazed x Quan"><figcaption>Quan · Vendors</figcaption></figure>
+      <!-- duplicate for seamless loop -->
+      <figure class="flyer" aria-hidden="true"><img src="uploads/YachtyUnfazedFlyer2.JPEG" alt=""><figcaption>Lil Yachty · Apr '26</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/IMG_1861.JPG" alt=""><figcaption>Lil Yachty · Feb '26</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/IMG_0130.jpg" alt=""><figcaption>Quan · Feb '26</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/IMG_0209.jpg" alt=""><figcaption>DDG · Jun '26</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/IMG_0364.jpeg" alt=""><figcaption>Quavo · Aug '26</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/DukeDennisUnfazedFlyer.JPG" alt=""><figcaption>Duke Dennis · Dec '25</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/DDGUnfazed2026_Updated.JPEG" alt=""><figcaption>DDG · Jun '26 · Vendors</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/IMG_5668.JPG" alt=""><figcaption>Fanum · Sep '26</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/IMG_3945.JPG" alt=""><figcaption>DDG · OTE Arena</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/DukeDennisUnfazedFlyerVendors.JPEG" alt=""><figcaption>Duke Dennis · Vendors</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/Yachty2026UnfazedFlyerVendors.JPEG" alt=""><figcaption>Lil Yachty · Vendors</figcaption></figure>
+      <figure class="flyer" aria-hidden="true"><img src="uploads/Quan2UnfazedFlyerVendors2.JPEG" alt=""><figcaption>Quan · Vendors</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ====== HOSTS ====== -->
+<section class="section" id="hosts">
+  <div class="meta"><div class="idx">02 / THE HOSTS</div><div>VERIFIED CULTURAL REACH</div></div>
+  <h2 class="h-xl reveal" style="max-width:20ch;margin-bottom:14px">
+    The face of the culture, <span style="color:var(--accent)">in the room.</span>
+  </h2>
+  <p class="p-lg reveal d1" style="margin-bottom:28px">
+    Each edition is anchored by a rotating roster of hosts whose IG, YouTube and Twitch
+    audiences are precisely the demographic sponsors are trying to reach. They don't
+    "post from the event" — they co-build it.
+  </p>
+
+  <div class="hosts-grid reveal">
+    <div class="host-cell">
+      <a class="host has-img" href="https://www.instagram.com/p/DS8AvLjkX3i/" target="_blank" rel="noopener" style="--bg:#1a1410">
+        <div class="ph" style="background-image:url('uploads/DUKE.JPEG');background-size:cover;background-position:center 25%"></div>
+        <div class="ph-tag">Host</div>
+        <div class="recap-cta">Watch Recap →</div>
+        <div class="foot">
+          <div class="role">Content · AMP</div>
+          <div class="name">Duke Dennis</div>
+          <div class="reach">
+            <span><b>15.7M</b> total reach</span><span><b>901K</b> flyer views</span>
+          </div>
+        </div>
+      </a>
+      <div class="host-drop" data-src="uploads/DUKE DENNIS DROP VID.mp4">
+        <div class="drop-tag">Drop</div>
+        <video src="uploads/DUKE DENNIS DROP VID.mp4" muted loop playsinline preload="metadata" autoplay></video>
+      </div>
+    </div>
+
+    <div class="host-cell">
+      <a class="host has-img" href="https://www.instagram.com/p/DLOIdc6g2kq/" target="_blank" rel="noopener" style="--bg:#1a1410">
+        <div class="ph" style="background-image:url('uploads/DDG.jpg');background-size:cover;background-position:center 20%"></div>
+        <div class="ph-tag">Host</div>
+        <div class="recap-cta">Watch Recap →</div>
+        <div class="foot">
+          <div class="role">Rapper · Streamer</div>
+          <div class="name">DDG</div>
+          <div class="reach">
+            <span><b>17M</b> total reach</span><span><b>1.2M</b> Twitch</span>
+          </div>
+        </div>
+      </a>
+      <div class="host-drop" data-src="uploads/DDG DROP VID.mp4">
+        <div class="drop-tag">Drop</div>
+        <video src="uploads/DDG DROP VID.mp4" muted loop playsinline preload="metadata" autoplay></video>
+      </div>
+    </div>
+
+    <div class="host-cell">
+      <a class="host has-img" href="https://www.instagram.com/p/DGo2HJiA1Zr/" target="_blank" rel="noopener" style="--bg:#1c1814">
+        <div class="ph" style="background-image:url('uploads/YACHTY.JPG');background-size:cover;background-position:center 25%"></div>
+        <div class="ph-tag">Host</div>
+        <div class="recap-cta">Watch Recap →</div>
+        <div class="foot">
+          <div class="role">Rapper · Designer · Concrete Boys</div>
+          <div class="name">Lil Yachty</div>
+          <div class="reach">
+            <span><b>24.5M</b> total reach</span><span><b>2.9B</b> streams</span>
+          </div>
+        </div>
+      </a>
+      <div class="host-drop" data-src="uploads/YACHTY DROP VID 2 UPDATED DROP VID.mp4">
+        <div class="drop-tag">Drop</div>
+        <video src="uploads/YACHTY DROP VID 2 UPDATED DROP VID.mp4" muted loop playsinline preload="metadata" autoplay></video>
+      </div>
+    </div>
+
+    <div class="host-cell">
+      <a class="host has-img" href="https://www.instagram.com/p/DOuEdhqEk2R/" target="_blank" rel="noopener" style="--bg:#1f1410">
+        <div class="ph" style="background-image:url('uploads/FANUM.jpg');background-size:cover;background-position:center 20%"></div>
+        <div class="ph-tag">Host</div>
+        <div class="recap-cta">Watch Recap →</div>
+        <div class="foot">
+          <div class="role">Content · AMP</div>
+          <div class="name">Fanum</div>
+          <div class="reach">
+            <span><b>10.1M</b> total reach</span><span><b>550K</b> announce views</span>
+          </div>
+        </div>
+      </a>
+      <div class="host-drop" data-src="uploads/FANUM DROP VIDEO.mp4">
+        <div class="drop-tag">Drop</div>
+        <video src="uploads/FANUM DROP VIDEO.mp4" muted loop playsinline preload="metadata" autoplay></video>
+      </div>
+    </div>
+
+    <div class="host-cell">
+      <a class="host has-img" href="https://www.instagram.com/p/DVXEqAWDNyq/" target="_blank" rel="noopener" style="--bg:#14190f">
+        <div class="ph" style="background-image:url('uploads/QUANN.JPG');background-size:cover;background-position:center 25%"></div>
+        <div class="ph-tag">Host</div>
+        <div class="recap-cta">Watch Recap →</div>
+        <div class="foot">
+          <div class="role">Rapper · Atlanta</div>
+          <div class="name">Quan</div>
+          <div class="reach">
+            <span><b>3M</b> total reach</span><span><b>Rising</b> act</span>
+          </div>
+        </div>
+      </a>
+      <div class="host-drop" data-src="uploads/QUAN DROP VID.mp4">
+        <div class="drop-tag">Drop</div>
+        <video src="uploads/QUAN DROP VID.mp4" muted loop playsinline preload="metadata" autoplay></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== EXPERIENCE ====== -->
+<section class="section" id="experience">
+  <div class="meta"><div class="idx">03 / THE EXPERIENCE</div><div>FOOTAGE / PRESS</div></div>
+  <h2 class="h-xl reveal" style="max-width:22ch;margin-bottom:28px">
+    Press play on a <span style="color:var(--accent)">live cultural drop</span> — not a pop-up.
+  </h2>
+
+  <!-- Featured strip: 3 portrait tiles, uniform scale -->
+  <div class="exp-strip reveal">
+    <div class="ex reel" data-media="video" data-src="uploads/DDG RECAP-81906497.mp4">
+      <video class="media" src="uploads/DDG RECAP-81906497.mp4" muted loop playsinline preload="metadata"></video>
+      <div class="tag">Recap · DDG Edition</div>
+      <div class="live">Live Footage</div>
+      <div class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="lbl"><span><b>DDG · State Farm Arena</b></span><span>1080×1920</span></div>
+    </div>
+    <div class="ex reel" data-media="video" data-src="uploads/QUAN-PT3-RECAP.mp4">
+      <video class="media" src="uploads/QUAN-PT3-RECAP.mp4" muted loop playsinline preload="metadata"></video>
+      <div class="tag">Recap · Quan Pt. 3</div>
+      <div class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="lbl"><span><b>Quan · Edition 03</b></span><span>Reel</span></div>
+    </div>
+    <div class="ex reel" data-media="video" data-src="uploads/CROWD-MIX.mp4">
+      <video class="media" src="uploads/CROWD-MIX.mp4" muted loop playsinline preload="metadata"></video>
+      <div class="tag">Recap · Crowd Mix</div>
+      <div class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+      <div class="lbl"><span><b>Live On The Floor</b></span><span>Reel</span></div>
+    </div>
+  </div>
+
+  <!-- Flyer row: 3 portrait flyers, same uniform scale -->
+  <div class="reel-row reveal">
+    <div class="ex reel" data-media="image" data-src="uploads/DDGUnfazed2026_Updated.JPEG">
+      <img class="media" src="uploads/DDGUnfazed2026_Updated.JPEG" alt="DDG flyer" />
+      <div class="tag">Flyer · DDG Jun '26</div>
+      <div class="lbl"><span><b>Unfazed × DDG</b></span><span>Edition 06</span></div>
+    </div>
+    <div class="ex reel" data-media="image" data-src="uploads/YachtyUnfazedFlyer2.JPEG">
+      <img class="media" src="uploads/YachtyUnfazedFlyer2.JPEG" alt="Yachty flyer" />
+      <div class="tag">Flyer · Yachty Apr '26</div>
+      <div class="lbl"><span><b>Lil Yachty</b></span><span>Edition 04</span></div>
+    </div>
+    <div class="ex reel" data-media="image" data-src="uploads/DukeDennisUnfazedFlyer.JPG">
+      <img class="media" src="uploads/DukeDennisUnfazedFlyer.JPG" alt="Duke Dennis flyer" />
+      <div class="tag">Flyer · Duke Dec '25</div>
+      <div class="lbl"><span><b>Duke Dennis</b></span><span>Edition 02</span></div>
+    </div>
+  </div>
+
+  <!-- Go Viral With Unfazed: analytics screenshots in one clean line -->
+  <div class="viral-head reveal">
+    <div class="kicker">Go Viral With Unfazed</div>
+  </div>
+  <div class="viral-row reveal">
+    <figure class="viral"><img src="uploads/DUKE DENNIS SOCIAL SHOT.png" alt="Duke Dennis · 344K views"><figcaption>Duke Dennis · 344K</figcaption></figure>
+    <figure class="viral"><img src="uploads/DDG ANALYTIC SHOT 2.png" alt="DDG · 236K views"><figcaption>DDG · 236K</figcaption></figure>
+    <figure class="viral"><img src="uploads/YACHTY ANALYTIC SHOT 1.png" alt="Lil Yachty · 698K views"><figcaption>Lil Yachty · 698K</figcaption></figure>
+    <figure class="viral"><img src="uploads/FANUM SOCIAL SHOT.png" alt="Fanum · 560K views"><figcaption>Fanum · 560K</figcaption></figure>
+    <figure class="viral"><img src="uploads/QUAN ANALYTIC SHOT 1.png" alt="Quan · 718K views"><figcaption>Quan · 718K</figcaption></figure>
+    <figure class="viral"><img src="uploads/QUAN ANALYTIC SHOT 2.png" alt="Quan · 534K views"><figcaption>Quan · 534K</figcaption></figure>
+  </div>
+
+  <!-- Press / coverage mosaic -->
+  <div class="press-mosaic reveal">
+    <figure class="pm"><img src="uploads/white girl with chains.png" alt="She sold millions of chains · 3.6M views"></figure>
+    <figure class="pm"><img src="uploads/Screenshot 2026-04-28 at 8.03.02 PM.png" alt="Unfazed press 02"></figure>
+    <figure class="pm"><img src="uploads/IMG_4897.jpeg" alt="Unfazed press 03"></figure>
+    <figure class="pm"><img src="uploads/IMG_1130.jpg" alt="Unfazed press 04"></figure>
+    <figure class="pm"><img src="uploads/IMG_1143.jpg" alt="Unfazed press 05"></figure>
+    <figure class="pm"><img src="uploads/IMG_1144.jpg" alt="Unfazed press 06"></figure>
+    <figure class="pm"><img src="uploads/IMG_1129.jpeg" alt="Unfazed press 07"></figure>
+    <figure class="pm"><img src="uploads/IMG_1128.jpeg" alt="Unfazed press 08"></figure>
+    <figure class="pm"><img src="uploads/Screenshot 2026-04-28 at 9.06.53 PM.png" alt="Quan & Khia Goes Ice Skating · @Quan · 549K views"></figure>
+    <figure class="pm"><img src="uploads/IMG_4899.jpeg" alt="Furniture Shopping For My New House · @Quan · 353K views"></figure>
+    <figure class="pm"><img src="uploads/Screenshot 2026-04-28 at 9.09.36 PM.png" alt="Duke Dennis Goes Streetwear Shopping In Atlanta · DukeDennis LIVE · 151K views"></figure>
+    <figure class="pm"><img src="uploads/Screenshot 2026-04-28 at 9.11.32 PM.png" alt="Inside Atlanta's Underground Streetwear Market · @superlinewholesale · 66K views"></figure>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lb" id="lb" aria-hidden="true">
+    <div class="lb-inner" id="lb-inner">
+      <button class="lb-close" id="lb-close" aria-label="Close">✕</button>
+    </div>
+  </div>
+</section>
+
+<!-- ====== AUDIENCE ====== -->
+<section class="section" id="audience">
+  <div class="meta"><div class="idx">04 / THE AUDIENCE</div><div>INSTAGRAM INSIGHTS · DDG EDITION</div></div>
+  <h2 class="h-xl reveal" style="max-width:20ch;margin-bottom:28px">
+    The exact room brands are <span style="color:var(--accent)">chasing</span> online — in person.
+  </h2>
+
+  <div class="aud-layout">
+    <div class="reveal">
+      <div class="split">
+        <div class="seg male"><div class="n">74%</div><div class="l">Male</div></div>
+        <div class="seg female"><div class="n">26%</div><div class="l">Female</div></div>
+      </div>
+
+      <div class="kicker" style="margin-bottom:10px">AGE DISTRIBUTION</div>
+      <div class="bar-group">
+        <div class="bar-row" data-w="7"><div class="bar-head"><span class="l">13–17</span><span class="v">7.2%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        <div class="bar-row" data-w="46"><div class="bar-head"><span class="l">18–24</span><span class="v">45.7%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        <div class="bar-row" data-w="36"><div class="bar-head"><span class="l">25–34</span><span class="v">36.2%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        <div class="bar-row" data-w="8"><div class="bar-head"><span class="l">35–44</span><span class="v">7.4%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+        <div class="bar-row" data-w="3"><div class="bar-head"><span class="l">45+</span><span class="v">3.5%</span></div><div class="bar-track"><div class="bar-fill"></div></div></div>
+      </div>
+
+      <div class="kicker" style="margin:32px 0 12px">PSYCHOGRAPHICS</div>
+      <div class="psych">
+        <div class="chip"><div class="k">Primary Identity</div><div class="v">Hip-Hop · Streetwear</div></div>
+        <div class="chip"><div class="k">Content Habit</div><div class="v">3.4 hrs / day</div></div>
+        <div class="chip"><div class="k">Income Range</div><div class="v">$42K – $95K</div></div>
+        <div class="chip"><div class="k">Shopping Behavior</div><div class="v">Drop-driven · Resale</div></div>
+        <div class="chip"><div class="k">Top Platforms</div><div class="v">IG · TikTok · YT</div></div>
+        <div class="chip"><div class="k">Aspiration</div><div class="v">Creator / Entrepreneur</div></div>
+      </div>
+    </div>
+
+    <aside class="aud-right reveal d1">
+      <div class="kicker" style="margin-bottom:14px">PRIMARY COHORT</div>
+      <h3>87.5% of attendees are <span style="color:var(--accent)">Gen Z + young Millennials</span> who set trends before they trend.</h3>
+
+      <div class="donut">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="48" fill="none" stroke="var(--rule)" stroke-width="16"/>
+          <circle id="donut-arc" cx="60" cy="60" r="48" fill="none" stroke="url(#gr)" stroke-width="16" stroke-linecap="butt"
+                  stroke-dasharray="0 999" transform="rotate(-90 60 60)"/>
+          <defs>
+            <linearGradient id="gr" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#E50914"/>
+              <stop offset="1" stop-color="#B30710"/>
+            </linearGradient>
+          </defs>
+          <text x="60" y="58" text-anchor="middle" fill="#F5F1EA" font-family="Space Grotesk" font-size="22" font-weight="600">87.5%</text>
+          <text x="60" y="74" text-anchor="middle" fill="#8A8680" font-family="JetBrains Mono" font-size="7" letter-spacing="1">18–34 CORE</text>
+        </svg>
+        <div class="legend">
+          <div class="row"><span class="sw" style="background:var(--accent)"></span><span><b>87.5%</b> · 18–34 core</span></div>
+          <div class="row"><span class="sw" style="background:var(--rule)"></span><span><b>12.5%</b> · Adjacent</span></div>
+          <div class="row" style="margin-top:10px;color:var(--ink)"><span>Vs. IG avg. 41% for streetwear brands</span></div>
+        </div>
+      </div>
+
+      <div class="rule" style="margin:10px 0 18px"></div>
+      <div style="display:flex;justify-content:space-between;gap:14px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-dim)">
+        <div>Source</div>
+        <div style="color:var(--ink)">IG Insights · 312K accounts reached</div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ====== WHY PROJECT CASTING × UNFAZED ====== -->
+<section class="section" id="why-pc">
+  <div class="meta">
+    <div class="idx">04.5 / THE MATCH</div>
+    <div>WHY PROJECT CASTING × UNFAZED</div>
+  </div>
+
+  <div class="why-pc">
+    <div class="thesis reveal">
+      <h2>Our floor <em>is</em> your funnel.</h2>
+      <p>Project Casting was built for creators, actors, models, and content makers — and powered by the brands hiring them. Unfazed Exhibit packs 2,000+ of those exact humans into one room, eight times a year, with hosts whose audiences already aspire to do exactly what PC enables.</p>
+      <p>This isn't sponsorship for awareness. It's <span style="color:var(--ink)">a live, in-person acquisition channel</span> for both sides of your marketplace — creators signing up, and brands shopping for talent — wrapped in editorial content the hosts publish to 50M+ followers.</p>
+    </div>
+
+    <div class="match-grid reveal d1">
+      <div class="match-cell">
+        <div class="k">PC's North Star</div>
+        <div class="v">850K+</div>
+        <div class="d">Content creators on Project Casting today. Unfazed's audience is the same demo, concentrated in one room.</div>
+      </div>
+      <div class="match-cell">
+        <div class="k">Floor Audience</div>
+        <div class="v">2,000+</div>
+        <div class="d">Culturally-engaged creators, models & content makers per edition — Gen Z & young Millennial, 72% male, ATL-anchored.</div>
+      </div>
+      <div class="match-cell">
+        <div class="k">Brand-Side Pipeline</div>
+        <div class="v">90+</div>
+        <div class="d">Founder-led brands vending at every exhibit — the exact buyers PC Enterprise targets for talent hiring.</div>
+      </div>
+      <div class="match-cell">
+        <div class="k">Host Repost Reach</div>
+        <div class="v">50M+</div>
+        <div class="d">Combined IG following from headline hosts (Yachty, DDG, Duke Dennis) — the aspirational anchor for PC's creator audience.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="compare reveal d2" style="margin-top:48px">
+    <div class="compare-head">
+      <div>What Project Casting Needs</div>
+      <div>What Unfazed Delivers</div>
+    </div>
+    <div class="compare-row">
+      <div>Top-of-funnel creator signups — the next 100k profiles.</div>
+      <div>QR signup wall in a co-branded "PC Talent Lounge" booth. ~1k signups per edition is a realistic ceiling.</div>
+    </div>
+    <div class="compare-row">
+      <div>Brand-side leads for PC Enterprise (Nike, A24, HBO, Adidas-tier).</div>
+      <div>Direct 1:1 founder access to 90+ vendors at every event — most already running paid creator campaigns.</div>
+    </div>
+    <div class="compare-row">
+      <div>Cultural credibility with the creator economy.</div>
+      <div>Host repost ladder: 50M+ combined follower reach via Yachty, DDG, Duke Dennis. "Powered by Project Casting" lockup attached.</div>
+    </div>
+    <div class="compare-row">
+      <div>Content the platform can reuse year-round.</div>
+      <div>3 co-produced reels, post-event carousel, branded booth footage — all licensed for PC's own channels.</div>
+    </div>
+    <div class="compare-row">
+      <div>Measurable, attributable performance.</div>
+      <div>UTM-tagged SMS + IG story drops over 8 weeks post-event. Every signup back to Unfazed is countable.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== TIERS removed at user request — backup at _backup/Unfazed Exhibit (with partnership).html ====== -->
+
+<!-- ====== SPONSORSHIP TIERS (3-tier) ====== -->
+<section class="section" id="sponsorship">
+  <div class="meta">
+    <div class="idx">05 / SPONSORSHIP</div>
+    <div>EXHIBIT SPONSORSHIP PACKAGES</div>
+  </div>
+
+  <div class="sponsor-head reveal">
+    <div class="pc-eyebrow">Proposal · Prepared For <b>Project Casting</b></div>
+    <h2>Three ways for Project Casting to <span style="color:var(--accent)">show up</span> at Unfazed.</h2>
+    <p class="sub">Unfazed puts you in the same room as 2,000+ culturally-engaged creators, models, dancers, and content makers per edition — the exact users Project Casting was built for. Pick the level of presence that matches your acquisition goals; every tier is engineered for in-room signups and post-event creator reach.</p>
+  </div>
+
+  <div class="ptiers reveal d1">
+    <!-- TIER 1 -->
+    <article class="ptier">
+      <div class="pt-name">Tier 01 — Awareness</div>
+      <div class="pt-price"><span class="cur">$</span><span class="amt">5,000</span><span class="per">/ edition</span></div>
+      <div class="pt-tag">Get Project Casting in front of the creator audience with full host amplification.</div>
+      <a class="pt-cta" href="#contact">Get Started <span class="arr">→</span></a>
+      <div class="pt-feat-head">What's Included</div>
+      <ul class="pt-list">
+        <li>Official Presenting Sponsor designation — "Powered by Project Casting"</li>
+        <li>Host amplification — flyers + announcement video with PC logo reshared via IG Story to 50M+ combined followers</li>
+        <li>Logo placement: announcement flyer, vendor flyer, host announcement & recap video</li>
+        <li>On-site signage at venue entry — first thing 2,000+ creators see walking in</li>
+        <li>5 complimentary staff tickets — scout talent + capture content for @projectcasting</li>
+        <li>Featured on Unfazed Exhibit website under "Thank You To Our Sponsors"</li>
+      </ul>
+    </article>
+
+    <!-- TIER 2 — cool -->
+    <article class="ptier cool">
+      <div class="badge">Recommended For PC</div>
+      <div class="pt-name">Tier 02 — Acquisition</div>
+      <div class="pt-price"><span class="cur">$</span><span class="amt">7,500</span><span class="per">/ edition</span></div>
+      <div class="pt-tag">Direct in-room signups plus a branded content drop aimed at the creator economy.</div>
+      <a class="pt-cta" href="#contact">Get Started <span class="arr">→</span></a>
+      <div class="pt-feat-head">Everything in Tier 1, plus</div>
+      <ul class="pt-list">
+        <li>Custom brand highlight video — "Get Hired Faster" creator spotlight, collab-posted with @UnfazedExhibit</li>
+        <li>Project Casting QR signup wall — capture emails from 2,000+ attendees in one night</li>
+        <li>Dedicated activation space in the lobby / main entrance — high foot-traffic positioning</li>
+        <li>Product placement (PC profile/app screens) in post-event Instagram photo carousel</li>
+        <li>10 complimentary staff tickets — talent scouting + onboarding new creators on-site</li>
+      </ul>
+    </article>
+
+    <!-- TIER 3 — premium -->
+    <article class="ptier most">
+      <div class="badge">Best Value For Creator Acquisition</div>
+      <div class="pt-name">Tier 03 — Talent Marketplace Takeover</div>
+      <div class="pt-price"><span class="cur">$</span><span class="amt">10,000</span><span class="per">/ edition</span></div>
+      <div class="pt-tag">Full category exclusivity, headline booth presence, and 8 weeks of direct marketing into the Unfazed creator base.</div>
+      <a class="pt-cta" href="#contact">Get Started <span class="arr">→</span></a>
+      <div class="pt-feat-head">Everything in Tier 1 & 2, plus</div>
+      <ul class="pt-list">
+        <li>Category exclusivity — no competing casting / talent platforms present or selling</li>
+        <li>Full Unfazed booth experience ("Meet The Host") — co-branded as the Project Casting talent lounge</li>
+        <li>Headline logo placement at venue entrance + step-and-repeat</li>
+        <li>3 collaborative IG Reels with @UnfazedExhibit — promo, booth walkthrough, host signup demo on Project Casting</li>
+        <li>1 SMS campaign per week linking to PC signup (8-week cycle · 1,400 brand owners)</li>
+        <li>1 weekly IG Story driving to Project Casting profile creation — ~3,000 avg views</li>
+        <li>15 complimentary staff tickets — full talent-scouting & content team on the floor</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ====== ACTIVATION STORYBOARD (replaces generic branded content showcase) ====== -->
+<section class="section" id="storyboard">
+  <div class="meta">
+    <div class="idx">05.5 / STORYBOARD</div>
+    <div>ACTIVATION SHOT LIST</div>
+  </div>
+
+  <div class="sb-head reveal">
+    <h2>How the activation <em>cuts together.</em></h2>
+    <p>Each Unfazed × Project Casting edition is shot like a five-frame story: arrival → discovery → signup → host moment → afterhours repost. Below is the cut, frame by frame.</p>
+  </div>
+
+  <div class="storyboard reveal d1">
+    <article class="frame">
+      <div class="sb-window">
+        <span class="sb-num">FR <b>01</b></span>
+        <span class="sb-time">EXT · DUSK</span>
+        <img src="uploads/IMG_3945.JPG" alt="Crowd arrival" />
+      </div>
+      <div class="sb-body">
+        <div class="sb-shot">Establishing Shot</div>
+        <div class="sb-title">The Open Call</div>
+        <div class="sb-desc">2,000+ creators line the ATL block. Project Casting logo lockup on entrance signage — first impression, every edition.</div>
+      </div>
+    </article>
+
+    <article class="frame">
+      <div class="sb-window">
+        <span class="sb-num">FR <b>02</b></span>
+        <span class="sb-time">INT · LOBBY</span>
+        <img src="uploads/IMG_4074.JPG" alt="Lobby activation" />
+      </div>
+      <div class="sb-body">
+        <div class="sb-shot">Wide / Booth</div>
+        <div class="sb-title">PC Talent Lounge</div>
+        <div class="sb-desc">Co-branded booth in main entry. Live signup wall — QR code → PC profile creation in under 60 seconds.</div>
+      </div>
+    </article>
+
+    <article class="frame">
+      <div class="sb-window">
+        <span class="sb-num">FR <b>03</b></span>
+        <span class="sb-time">INT · BOOTH</span>
+        <img src="uploads/IMG_1861.JPG" alt="Signup interaction" />
+      </div>
+      <div class="sb-body">
+        <div class="sb-shot">Close-Up</div>
+        <div class="sb-title">The Signup</div>
+        <div class="sb-desc">~1k new creator profiles captured per edition. Built-in headshot booth doubles their profile photo — frictionless onboarding.</div>
+      </div>
+    </article>
+
+    <article class="frame">
+      <div class="sb-window">
+        <span class="sb-num">FR <b>04</b></span>
+        <span class="sb-time">INT · FLOOR</span>
+        <img src="uploads/DSC06397.JPG" alt="Host walkthrough" />
+      </div>
+      <div class="sb-body">
+        <div class="sb-shot">Tracking Shot</div>
+        <div class="sb-title">Host Walkthrough</div>
+        <div class="sb-desc">LaBaron walks the floor with the headlining host — co-produced reel features PC's booth + a creator who just signed up.</div>
+      </div>
+    </article>
+
+    <article class="frame">
+      <div class="sb-window">
+        <span class="sb-num">FR <b>05</b></span>
+        <span class="sb-time">EXT · POST</span>
+        <img src="uploads/SaveClip.App_660298584_17947229688139429_3027239975201372269_n.jpg" alt="Repost" />
+      </div>
+      <div class="sb-body">
+        <div class="sb-shot">Cutaway / Reach</div>
+        <div class="sb-title">The Repost</div>
+        <div class="sb-desc">Headline host reshares the flyer, the recap, and the booth reel — 50M+ combined IG audience, "Powered by Project Casting" lockup attached.</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ====== BRANDED CONTENT SHOWCASE (kept, retitled for PC) ====== -->
+<section class="section" id="branded-content">
+  <div class="meta">
+    <div class="idx">05.6 / BRANDED CONTENT</div>
+    <div>SHOWCASE</div>
+  </div>
+  <h2 class="bc-title reveal">Branded Content Showcase</h2>
+  <div class="bc-row reveal">
+    <figure class="bc bc-photo">
+      <img src="uploads/SaveClip.App_660298584_17947229688139429_3027239975201372269_n.jpg" alt="Branded content · floor activation" />
+    </figure>
+    <figure class="bc bc-video">
+      <video src="uploads/YACHT WATER VID.mp4" muted loop playsinline preload="metadata" autoplay></video>
+    </figure>
+    <figure class="bc bc-photo">
+      <img src="uploads/SaveClip.App_659888214_17947229730139429_6417187081036703636_n.jpg" alt="Branded content · Yacht Water mascot moment" />
+    </figure>
+  </div>
+</section>
+<section class="section" id="tiers">
+  <div class="meta">
+    <div class="idx">06 / EXCLUSIVE PARTNER</div>
+    <div class="pship-title-row">
+      <span>FY26 AVAILABILITY · LIMITED</span>
+    </div>
+  </div>
+
+  <div class="pship-head reveal">
+    <h2 data-pf="headline">Built for the platform that wants <span style="color:var(--accent)">the creators.</span></h2>
+    <div>
+      <p class="sub" data-pf="sub">A custom, exclusive activation built around Project Casting's two-sided marketplace — in-person creator acquisition <em>and</em> direct exposure to the 90+ founder-led brands shopping our floor for talent partnerships.</p>
+      <div class="audience-toggle" role="tablist" aria-label="Audience selector">
+        <span class="at-label">Tailored For</span>
+        <button type="button" data-aud="creators" class="active" role="tab" aria-selected="true">Creator Acquisition</button>
+        <button type="button" data-aud="brands" role="tab" aria-selected="false">Brand Side (Enterprise)</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="ppackage reveal d2" data-pf="package">
+    <!-- populated by JS -->
+  </div>
+</section>
+
+<!-- ====== CALL SHEET ====== -->
+<section class="section" id="callsheet">
+  <div class="meta">
+    <div class="idx">08 / CALL SHEET</div>
+    <div>DAY-OF · PC ACTIVATION</div>
+  </div>
+
+  <div class="cs-wrap reveal">
+    <div class="cs-top">
+      <div class="col">
+        <div class="k">Production</div>
+        <div class="v">Unfazed Exhibit · Edition 26.06</div>
+      </div>
+      <div class="col">
+        <div class="k">Shoot Date</div>
+        <div class="v red">Sat · Jun 13, 2026</div>
+      </div>
+      <div class="col">
+        <div class="k">Sponsor</div>
+        <div class="v">Project Casting</div>
+      </div>
+    </div>
+
+    <div class="cs-grid">
+      <div class="head">Time</div>
+      <div class="head">Item</div>
+      <div class="head">Description</div>
+      <div class="head">Owner</div>
+
+      <div class="time">10:00 AM</div>
+      <div class="title">Load-In / Booth Build</div>
+      <div class="desc">Unfazed crew sets PC Talent Lounge — QR signup wall, headshot station, branded backdrop.</div>
+      <div class="own"><span class="badge">Unfazed</span></div>
+
+      <div class="time">12:00 PM</div>
+      <div class="title">PC Team Arrival</div>
+      <div class="desc">PC staff (5–15 tickets, tier dependent) onsite for tech check + creator-facing brief.</div>
+      <div class="own"><span class="badge pc">Project Casting</span></div>
+
+      <div class="time">1:30 PM</div>
+      <div class="title">Host Soundcheck + Slate Shot</div>
+      <div class="desc">Headline host records "Powered By Project Casting" announcement video on the floor.</div>
+      <div class="own"><span class="badge">Unfazed</span> <span class="badge pc">PC</span></div>
+
+      <div class="time">3:00 PM</div>
+      <div class="title">Doors Open · Open Call</div>
+      <div class="desc">2,000+ creators arrive. QR signups begin. Headshot booth runs continuously.</div>
+      <div class="own"><span class="badge pc">PC</span></div>
+
+      <div class="time">5:00 PM</div>
+      <div class="title">Host Walkthrough · Reel 01</div>
+      <div class="desc">LaBaron + headliner film booth-to-booth reel featuring 3 founder-led vendors using PC.</div>
+      <div class="own"><span class="badge">Unfazed</span></div>
+
+      <div class="time">7:30 PM</div>
+      <div class="title">Peak Floor · Signup Push</div>
+      <div class="desc">Targeted push for last-mile signups. Goal: 1,000+ new PC profiles captured by 9:00 PM.</div>
+      <div class="own"><span class="badge pc">PC</span></div>
+
+      <div class="time">9:00 PM</div>
+      <div class="title">Wrap / Repost Window</div>
+      <div class="desc">Host reposts flyer + booth reel to IG Stories — 50M+ combined audience activated within 24h.</div>
+      <div class="own"><span class="badge">Unfazed</span></div>
+
+      <div class="time">Mon · +24h</div>
+      <div class="title">Recap Drop · Carousel</div>
+      <div class="desc">@UnfazedExhibit posts the recap carousel — PC product placement, attribution UTMs live.</div>
+      <div class="own"><span class="badge">Unfazed</span></div>
+
+      <div class="time">Weeks 1–8</div>
+      <div class="title">Owned-Channel Push</div>
+      <div class="desc">1 SMS/week + 1 IG story/week to 14K owned audience, driving to PC signup. UTM-tagged.</div>
+      <div class="own"><span class="badge">Unfazed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== CTA ====== -->
+<section class="cta" id="contact">
+  <div class="meta"><div class="idx">09 / CONTACT</div><div>LET'S BUILD</div></div>
+  <h2 class="reveal">
+    Get in the <span class="accent">room</span><br>with the culture.
+  </h2>
+  <div class="cta-row">
+    <div class="reveal d1">
+      <p class="p-lg" style="margin-top:0">
+        Hey Project Casting team — we built this proposal specifically for you. The Unfazed crowd <em>is</em> your
+        user base: creators, models, content makers, and the founder-led brands hiring them. Tell us which edition
+        you want and the tier, and we'll send a co-branded activation plan within 48 hours.
+      </p>
+      <a class="cta-btn" href="mailto:labaron@unfazedexhibit.com?subject=Project%20Casting%20%C3%97%20Unfazed%20Sponsorship">
+        <span class="dot"></span> Reach Out →
+      </a>
+    </div>
+
+    <div class="contact-card reveal d2">
+      <div class="row"><span class="k">Prepared For</span><span class="v">Project Casting</span></div>
+      <div class="row"><span class="k">Partnerships</span><span class="v">labaron@unfazedexhibit.com</span></div>
+      <div class="row"><span class="k">IG</span><span class="v">@unfazedexhibit</span></div>
+      <div class="row"><span class="k">Next Edition</span><span class="v">Jun 13 · ATL</span></div>
+      <div class="row"><span class="k">HQ</span><span class="v">Atlanta, GA</span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>© 2026 Unfazed Exhibit LLC · ATL</div>
+  <div>Made with <b>CULTURE</b> — Not <b>HYPE</b></div>
+  <div>Press Kit · Privacy · Terms</div>
+</footer>
+
+<!-- ====== TWEAKS ====== -->
+<div id="tweaks">
+  <h4>Tweaks</h4>
+  <div class="group">
+    <label>Accent Hue</label>
+    <div class="swatches" id="hues">
+      <div class="sw on" data-hue="0" style="background:#E50914"></div>
+      <div class="sw" data-hue="50" style="background:oklch(0.78 0.14 50)"></div>
+      <div class="sw" data-hue="140" style="background:oklch(0.78 0.14 140)"></div>
+      <div class="sw" data-hue="260" style="background:oklch(0.72 0.17 260)"></div>
+      <div class="sw" data-hue="320" style="background:oklch(0.74 0.18 320)"></div>
+    </div>
+  </div>
+  <div class="group">
+    <label>Collage Opacity</label>
+    <input type="range" id="collageOpacity" min="20" max="100" value="55">
+  </div>
+</div>
+
+<script>
+/* ----------- Settings (tweakable) ----------- */
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accentHue": 260,
+  "collageOpacity": 54
+}/*EDITMODE-END*/;
+
+const tweak = { ...TWEAK_DEFAULTS };
+
+function applyTweaks(){
+  document.documentElement.style.setProperty('--accent', `oklch(0.78 0.14 ${tweak.accentHue})`);
+  document.documentElement.style.setProperty('--accent-2', `oklch(0.68 0.16 ${Math.max(tweak.accentHue - 20, 0)})`);
+  const coll = document.querySelector('.collage');
+  if(coll) coll.style.opacity = (tweak.collageOpacity/100);
+  const st = document.getElementById('dyn-grid');
+  if(st) st.textContent = '';
+}
+
+const dyn = document.createElement('style'); dyn.id='dyn-grid'; document.head.appendChild(dyn);
+
+/* ----------- Nav scroll state ----------- */
+const navEl = document.querySelector('.nav');
+const onScroll = ()=> navEl.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onScroll, {passive:true});
+onScroll();
+
+/* ----------- Cursor-tracked hero gradient ----------- */
+const hero = document.querySelector('.hero');
+hero.addEventListener('pointermove', (e)=>{
+  const r = hero.getBoundingClientRect();
+  hero.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+  hero.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+});
+
+
+
+/* ----------- Reveal on scroll ----------- */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ----------- Counter ramp ----------- */
+function easeOutCubic(t){ return 1 - Math.pow(1-t, 3); }
+function animateCount(el){
+  const target = parseFloat(el.dataset.num);
+  const suffix = el.dataset.suffix || '';
+  const format = el.dataset.format;
+  const valEl = el.querySelector('.val');
+  const unit = valEl.querySelector('.unit');
+  const isFloat = target % 1 !== 0;
+  const dur = 1800;
+  const start = performance.now();
+  function tick(t){
+    const p = Math.min(1, (t - start) / dur);
+    const cur = target * easeOutCubic(p);
+    let text = isFloat ? cur.toFixed(1) : Math.round(cur).toString();
+    if(format === 'comma') text = Math.round(cur).toLocaleString();
+    valEl.firstChild.nodeValue = text + suffix + ' ';
+    if(p < 1) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+}
+const countIO = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{ if(en.isIntersecting){ animateCount(en.target); countIO.unobserve(en.target);} });
+},{threshold:.4});
+document.querySelectorAll('.nums .cell').forEach(el=>countIO.observe(el));
+
+/* ----------- Bars ----------- */
+const barIO = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      en.target.style.setProperty('--w', en.target.dataset.w + '%');
+      en.target.classList.add('in');
+      barIO.unobserve(en.target);
+    }
+  });
+},{threshold:.3});
+document.querySelectorAll('.bar-row').forEach(el=>barIO.observe(el));
+
+/* ----------- Donut arc ----------- */
+const donutIO = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{
+    if(en.isIntersecting){
+      const arc = document.getElementById('donut-arc');
+      if(arc){
+        const circ = 2 * Math.PI * 48;
+        const val = 72.4 / 100;
+        arc.style.transition = 'stroke-dasharray 1.6s cubic-bezier(.2,.6,.2,1)';
+        requestAnimationFrame(()=>{ arc.setAttribute('stroke-dasharray', `${circ * val} ${circ}`); });
+      }
+      donutIO.unobserve(en.target);
+    }
+  });
+},{threshold:.3});
+const aud = document.querySelector('.aud-right');
+if(aud) donutIO.observe(aud);
+
+/* ----------- Experience: autoplay reels in view + lightbox ----------- */
+const reels = document.querySelectorAll('.ex video, .exp-strip .reel video');
+const reelIO = new IntersectionObserver((entries)=>{
+  entries.forEach(en=>{
+    const v = en.target;
+    if(en.isIntersecting){
+      v.play().catch(()=>{});
+    } else {
+      v.pause();
+    }
+  });
+},{threshold:.35});
+reels.forEach(v=>reelIO.observe(v));
+
+const lb = document.getElementById('lb');
+const lbInner = document.getElementById('lb-inner');
+const lbClose = document.getElementById('lb-close');
+function openLightbox(type, src){
+  // clear previous content (keep close btn)
+  [...lbInner.querySelectorAll('video, img')].forEach(n=>n.remove());
+  lbInner.classList.remove('landscape');
+  if(type === 'video'){
+    const v = document.createElement('video');
+    v.src = src; v.controls = true; v.autoplay = true; v.playsInline = true; v.loop = true;
+    lbInner.appendChild(v);
+  } else {
+    const i = document.createElement('img');
+    i.src = src;
+    // landscape detection on load
+    i.onload = ()=>{ if(i.naturalWidth > i.naturalHeight) lbInner.classList.add('landscape'); };
+    lbInner.appendChild(i);
+  }
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+  [...lbInner.querySelectorAll('video')].forEach(v=>{ v.pause(); v.removeAttribute('src'); v.load(); });
+  [...lbInner.querySelectorAll('video, img')].forEach(n=>n.remove());
+}
+document.querySelectorAll('[data-media]').forEach(card=>{
+  card.addEventListener('click', ()=>{
+    const type = card.dataset.media;
+    const src = card.dataset.src;
+    if(src) openLightbox(type, src);
+  });
+});
+lbClose.addEventListener('click', closeLightbox);
+lb.addEventListener('click', e=>{ if(e.target === lb) closeLightbox(); });
+window.addEventListener('keydown', e=>{ if(e.key === 'Escape' && lb.classList.contains('open')) closeLightbox(); });
+
+/* ----------- Partnership: Project Casting — Creator vs Brand-side packages ----------- */
+const PACKAGES = {
+  creators: {
+    name: 'Project Casting · Creator Acquisition Package',
+    tag: 'Get in front of the exact 850k-creator audience PC was built for. Booth, exclusive category, host content, 8-week direct marketing into the Unfazed base.',
+    cta: 'Reserve the slot',
+    groups: [
+      {
+        head: 'Booth & Access',
+        items: [
+          'Unfazed Full Booth — co-branded "Project Casting Talent Lounge"',
+          'Live signup station: capture 1,000+ new creator profiles per edition via on-site QR',
+          'Direct access to 2,000+ culturally-engaged creators, models & content makers in-room',
+          { sub: 'Exclusive category — no competing casting / talent platforms on the floor' }
+        ]
+      },
+      {
+        head: 'Brand Visibility',
+        items: [
+          'Exclusive presenting platform on 2 flyers + host announcement video',
+          'Host required to post main flyer + announcement video — 50M+ combined IG followers',
+          'Project Casting logo placement at venue entry + step-and-repeat'
+        ]
+      },
+      {
+        head: 'Co-Produced Content',
+        items: [
+          '3 collaborated reels with LaBaron',
+          { sub: 'LaBaron in event promotion — "Built For Creators" tie-in' },
+          { sub: 'LaBaron booth-to-booth quality review — vendor founders endorsing PC' },
+          { sub: 'Host & booth video during walkthrough — live signup demo' }
+        ]
+      },
+      {
+        head: 'Owned Audience Reach · 8 Weeks',
+        items: [
+          '1 SMS per week with link to Project Casting signup · 1,400 creator/vendor brand owners',
+          '1 IG story per week with link to PC profile creation · 3,000 avg views',
+          { sub: 'All traffic UTM-tagged so PC can measure signups attributable to Unfazed' }
+        ]
+      }
+    ]
+  },
+  brands: {
+    name: 'Project Casting · Enterprise Brand-Side Package',
+    tag: 'Position PC Enterprise Services directly in front of 90+ founder-led brands and agencies hiring talent right now — the same audience pitching Nike, Adidas, SKIMS, Bumble & Target through your platform.',
+    cta: 'Reserve the slot',
+    groups: [
+      {
+        head: 'Booth & Access',
+        items: [
+          'Unfazed Full Booth — "Hire Smarter" Enterprise demo station',
+          'Direct access to 90+ founder-led brands actively building marketing & content teams',
+          'Pitch Enterprise Services 1:1 to founders who already trust Unfazed for talent reach'
+        ]
+      },
+      {
+        head: 'Brand Visibility',
+        items: [
+          'Exclusive presenting platform on 2 flyers + host announcement video',
+          'Host required to post main flyer + announcement video',
+          'Project Casting Enterprise logo placement at venue entry'
+        ]
+      },
+      {
+        head: 'Co-Produced Content',
+        items: [
+          '3 collaborated reels with LaBaron',
+          { sub: 'LaBaron explaining how brands hire talent through PC Enterprise' },
+          { sub: 'LaBaron booth walkthrough — featured vendor case studies' },
+          { sub: 'Host & booth video during walkthrough — Enterprise feature highlight' }
+        ]
+      },
+      {
+        head: 'Owned Audience Reach · 8 Weeks',
+        items: [
+          '1 SMS per week with link to PC Enterprise landing page · 1,400 brand owners',
+          '1 IG story per week with link to PC Companies page · 3,000 avg views'
+        ]
+      }
+    ]
+  }
+};
+
+let currentAudience = 'creators';
+
+/* ----------- Legacy data preserved (unused, kept for template fallback) ----------- */
+const _LEGACY_PACKAGES_BLANK_AGENCY = {
+  blank: {
+    name: 'Blank Apparel · Company Package',
+    tag: 'One package. Full booth, exclusive category, host content, audience reach.',
+    cta: 'Reserve the slot',
+    groups: [
+      {
+        head: 'Booth & Access',
+        items: [
+          'Unfazed Full Booth — Meet the host',
+          'Direct access to 90+ vendor brand owners (exclusive blanks-company access)',
+          'Sell blanks to the general public — 2,000+ attendees in-room'
+        ]
+      },
+      {
+        head: 'Brand Visibility',
+        items: [
+          'Exclusive presenting sponsor on 2 flyers + host announcement video',
+          'Host required to post main flyer + announcement video',
+          'Logo placement at venue entry'
+        ]
+      },
+      {
+        head: 'Co-Produced Content',
+        items: [
+          '3 collaborated reels with LaBaron',
+          { sub: 'LaBaron in event promotion' },
+          { sub: 'LaBaron booth-to-booth quality review' },
+          { sub: 'Host & booth video during walkthrough' }
+        ]
+      },
+      {
+        head: 'Owned Audience Reach · 8 Weeks',
+        items: [
+          '1 SMS per week with link to blanks store · 1,400 brand owners',
+          '1 IG story per week with link to store · 3,000 avg views'
+        ]
+      }
+    ]
+  },
+  agency: {
+    name: 'Ad Agency · Client Activation Package',
+    tag: 'One package. Direct client access, exclusive category, co-produced content, owned reach.',
+    cta: 'Reserve the slot',
+    groups: [
+      {
+        head: 'Booth & Access',
+        items: [
+          'Unfazed Full Booth — Meet the host',
+          'Direct access to 90+ founder-led brands actively seeking agency partners (exclusive agency access)',
+          'Pitch services in-room to 2,000+ culturally-engaged attendees per event'
+        ]
+      },
+      {
+        head: 'Brand Visibility',
+        items: [
+          'Exclusive presenting agency on 2 flyers + host announcement video',
+          'Host required to post main flyer + announcement video',
+          'Agency logo placement at venue entry'
+        ]
+      },
+      {
+        head: 'Co-Produced Content',
+        items: [
+          '3 collaborated reels with LaBaron',
+          { sub: 'LaBaron in agency promotion / capabilities feature' },
+          { sub: 'LaBaron booth walkthrough — agency client showcase' },
+          { sub: 'Host & booth video during walkthrough' }
+        ]
+      },
+      {
+        head: 'Owned Audience Reach · 8 Weeks',
+        items: [
+          '1 SMS per week with link to agency landing page · 1,400 brand owners',
+          '1 IG story per week with link to agency site · 3,000 avg views'
+        ]
+      }
+    ]
+  }
+};
+
+let _LEGACY_currentAudience = 'blank';
+
+function renderPartnership(){
+  const sec = document.getElementById('tiers');
+  const pkgEl = sec.querySelector('[data-pf="package"]');
+  const PACKAGE = PACKAGES[currentAudience];
+  const groupsHtml = PACKAGE.groups.map((g, i) => `
+    <div class="pkg-group">
+      <div class="pkg-idx">0${i+1}</div>
+      <div class="pkg-head">${g.head}</div>
+      <ul class="pkg-list">${g.items.map(it => {
+        if(typeof it === 'object' && it.sub){
+          return `<li class="sub">${it.sub}</li>`;
+        }
+        return `<li>${it}</li>`;
+      }).join('')}</ul>
+    </div>
+  `).join('');
+  pkgEl.innerHTML = `
+    <article class="pkg-card">
+      <div class="pkg-top">
+        <div class="pkg-top-left">
+          <div class="pkg-eyebrow">Single Package · Limited To One Per Edition</div>
+          <h3 class="pkg-name">${PACKAGE.name}</h3>
+          <div class="pkg-tag">${PACKAGE.tag}</div>
+        </div>
+        <div class="pkg-top-right">
+          <div class="pkg-price"><span class="amt" style="font-size:clamp(36px,3.8vw,52px);letter-spacing:-.03em">Inquire</span></div>
+          <a class="pkg-cta" href="#contact">${PACKAGE.cta} <span class="arr">→</span></a>
+        </div>
+      </div>
+      <div class="pkg-proof">
+        <div class="pkg-proof-head">
+          <div class="pkg-proof-label">Proof · Hosts Repost</div>
+          <div class="pkg-proof-sub">Every host shares the flyer + tickets to their audience.</div>
+        </div>
+        <div class="pkg-proof-row">
+          <figure class="pkg-proof-card">
+            <img src="uploads/repost-yachty.png" alt="Lil Yachty IG story repost" />
+            <figcaption><span class="h">@lilyachty</span><span class="m">24.5M followers</span></figcaption>
+          </figure>
+          <figure class="pkg-proof-card">
+            <img src="uploads/repost-ddg.png" alt="DDG IG story repost" />
+            <figcaption><span class="h">@ddg</span><span class="m">17M followers</span></figcaption>
+          </figure>
+          <figure class="pkg-proof-card">
+            <img src="uploads/repost-duke.png" alt="Duke Dennis IG story repost" />
+            <figcaption><span class="h">@dukedennis</span><span class="m">15.7M followers</span></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="pkg-grid">${groupsHtml}</div>
+    </article>
+  `;
+}
+renderPartnership();
+
+/* Audience toggle (Blank Apparel ↔ Ad Agency) */
+document.querySelectorAll('.audience-toggle button[data-aud]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const aud = btn.dataset.aud;
+    if(aud === currentAudience) return;
+    currentAudience = aud;
+    document.querySelectorAll('.audience-toggle button[data-aud]').forEach(b=>{
+      const on = b.dataset.aud === aud;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    renderPartnership();
+    // Re-run title case pass on the freshly rendered package
+    if(typeof window.__rerunTitleCase === 'function') window.__rerunTitleCase();
+  });
+});
+
+/* ----------- Tweaks bridge ----------- */
+window.addEventListener('message', (e)=>{
+  const msg = e.data || {};
+  if(msg.type === '__activate_edit_mode'){ document.getElementById('tweaks').classList.add('on'); }
+  if(msg.type === '__deactivate_edit_mode'){ document.getElementById('tweaks').classList.remove('on'); }
+});
+window.parent.postMessage({type:'__edit_mode_available'}, '*');
+
+function persist(partial){
+  Object.assign(tweak, partial);
+  window.parent.postMessage({type:'__edit_mode_set_keys', edits: partial }, '*');
+  applyTweaks();
+}
+document.querySelectorAll('#hues .sw').forEach(sw=>{
+  sw.addEventListener('click', ()=>{
+    document.querySelectorAll('#hues .sw').forEach(s=>s.classList.remove('on'));
+    sw.classList.add('on');
+    persist({ accentHue: parseInt(sw.dataset.hue,10) });
+  });
+});
+document.getElementById('collageOpacity').addEventListener('input', e=>persist({ collageOpacity: parseInt(e.target.value,10) }));
+
+applyTweaks();
+
+/* ============================================================
+   TITLE CASE PASS — descriptive copy site-wide
+   Headlines (h1/h2/h3), big stat values, brand/host proper-noun
+   blocks are left untouched. Acronyms re-uppercased.
+   ============================================================ */
+(function titleCasePass(){
+  const selectors = [
+    'h1','h2','h3',
+    '.sub','.desc','.kicker','.tag','.flyers-meta',
+    '.cell .lbl','.ex .lbl span','.bar-row .l',
+    '.psych .k','.psych .v',
+    '.aud-right p','.aud-right h3',
+    '.ptier li','.ptier .pt-price small','.ptier .badge','.ptier .pt-name','.ptier .pt-tag','.ptier .pt-feat-head','.ptier .pt-cta',
+    '.sponsor-head .sub','.audience-toggle .at-label',
+    '.pkg-eyebrow','.pkg-tag','.pkg-head','.pkg-list li','.pkg-cta',
+    '.pkg-proof-label','.pkg-proof-sub','.pkg-proof-card figcaption',
+    '.meta .idx','.meta div','.pship-title-row .pf-pill',
+    '.cell .desc','.cell .idx',
+    '.tile-meta','.partner-pill','.flyer-cap',
+    '.cta p','.hero-scroll'
+  ];
+  const ACRONYMS = new Set([
+    'DDG','IG','SMS','TV','IGTV','ATL','GA','USA','UK','EU','NYC','LA',
+    'CEO','COO','CMO','CFO','VP','SVP','EVP',
+    'FAQ','Q&A','VIP','VVIP','RSVP','UGC','POV','OOH','OOTD',
+    'AI','ML','API','URL','HTTP','PR','OG',
+    'DJ','MC','EP','LP','MV','BTS','BPM',
+    'NFL','NBA','MLB','NHL','UFC','MMA',
+    'XL','XXL','XXXL','SS','FW','AW',
+    'III','IV','VI','VII','VIII','IX','XI','XII'
+  ]);
+  // Brand/host name segments that should keep specific casing
+  const PROPER = {
+    'ddg':'DDG','yachty':'Yachty','lil':'Lil','quavo':'Quavo','quan':'Quan',
+    'fanum':'Fanum','duke':'Duke','dennis':'Dennis','atlanta':'Atlanta',
+    'unfazed':'Unfazed','exhibit':'Exhibit','foundry':'Foundry',
+    'gen':'Gen','z':'Z','millennials':'Millennials','millennial':'Millennial',
+    'instagram':'Instagram','tiktok':'TikTok','youtube':'YouTube',
+    'hip-hop':'Hip-Hop','streetwear':'Streetwear',
+    'pre-sale':'Pre-Sale','post-event':'Post-Event','non-follower':'Non-Follower',
+    'sold':'Sold','out':'Out','live':'Live','main':'Main','stage':'Stage',
+    'edition':'Edition','recap':'Recap','reel':'Reel','flyer':'Flyer',
+    'crowd':'Crowd','press':'Press','photo':'Photo','vendor':'Vendor','row':'Row',
+    'afterhours':'Afterhours','hosted':'Hosted','walkthrough':'Walkthrough',
+    'floor':'Floor','energy':'Energy','front':'Front',
+    'jun':'Jun','jul':'Jul','aug':'Aug','sep':'Sep','oct':'Oct','nov':'Nov','dec':'Dec',
+    'jan':'Jan','feb':'Feb','mar':'Mar','apr':'Apr','may':'May',
+    'lilyachty':'lilyachty','dukedennis':'dukedennis','labaron':'LaBaron',
+    'unfazedexhibit':'unfazedexhibit','unfazednetwork':'unfazednetwork'
+  };
+
+  function titleCaseWord(w){
+    // preserve all-caps tokens that look like acronyms (kept ≥2 letters all caps)
+    const stripped = w.replace(/[^A-Za-z]/g,'');
+    if(!stripped) return w; // pure number/punct
+    // alpha+digit tokens (FY25, DSC06397, IMG1861) — uppercase the alpha part
+    if(/^[A-Za-z]{2,4}\d+$/.test(w)){
+      return w.replace(/^[A-Za-z]+/, m => m.toUpperCase());
+    }
+    if(ACRONYMS.has(stripped.toUpperCase())) {
+      // replace alpha portion with uppercase, keep punctuation
+      return w.replace(/[A-Za-z]+/, m => m.toUpperCase());
+    }
+    const lower = w.toLowerCase();
+    if(PROPER[lower]) return PROPER[lower] + w.slice(lower.length);
+    // hyphenated words: title case each part
+    if(w.includes('-')){
+      return w.split('-').map(titleCaseWord).join('-');
+    }
+    // possessive 's at end: capitalize first letter, lowercase rest
+    const lc = w.toLowerCase();
+    return lc.charAt(0).toUpperCase() + lc.slice(1);
+  }
+
+  function titleCaseString(s){
+    if(!s) return s;
+    // tokenize on whitespace; preserve internal punctuation
+    return s.split(/(\s+)/).map(tok => {
+      if(/^\s+$/.test(tok)) return tok;
+      // process each alpha-run separately, preserving original case for acronym detection
+      return tok.replace(/([A-Za-z][A-Za-z'-]*)/g, (m) => titleCaseWord(m));
+    }).join('');
+  }
+
+  function walkText(el){
+    el.childNodes.forEach(n => {
+      if(n.nodeType === 3){ // text node
+        const t = n.nodeValue;
+        if(t && t.trim()) n.nodeValue = titleCaseString(t);
+      } else if(n.nodeType === 1 && !['SCRIPT','STYLE'].includes(n.tagName)){
+        walkText(n);
+      }
+    });
+  }
+
+  function run(){
+    selectors.forEach(sel => {
+      document.querySelectorAll(sel).forEach(el => {
+        walkText(el);
+      });
+    });
+  }
+  window.__rerunTitleCase = run;
+
+  // Run after partnership tiers/audience etc. are populated
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', () => setTimeout(run, 50));
+  } else {
+    setTimeout(run, 50);
+  }
+})();
+</script>
+
+</body>
+</html>
